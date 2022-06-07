@@ -62,14 +62,17 @@
       <main class="page-main">
         <h1 class="visually-hidden">Sypergym</h1>
         <section class="description">
-          <div class="description__container">
-            <h2>Тренажерный зал</h2>
-            <span>Просторный зал площадью 900 кв/м</span>
-            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <div class="description__wrapper">
+            <div class="description__container">
+              <h2>Тренажерный зал</h2>
+              <span>Просторный зал площадью 900 кв/м</span>
+              <p>Supergym – самый большой фитнес центр за Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+            </div>
             <div class="description__paragraph">
-              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
           </div>
+
           <picture class="description__img">
             <!--320 640 -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/jym-mobile.webp 1x, img/jym-mobile@2x.webp 2x">
@@ -80,8 +83,9 @@
             <!--660  1320-->
             <img src="img/jym.jpg" srcset="img/jym@2x.jpg 2x" alt="фото зала" width="660" height="401">
           </picture>
-          <div class="description__video">
-            <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="description__video video__wrapper video__wrapper_full js-videoWrapper" data-element="video">
+            <iframe class="videoIframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="" allowTransparency="true" data-element="iframe"></iframe>
+            <button class="videoPoster js-videoPoster"></button>
           </div>
         </section>
         <section class="subscription">
