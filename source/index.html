@@ -91,76 +91,72 @@
         <section class="subscription">
           <h2>Абонементы</h2>
           <ul class="subscription__tab-list">
-            <li class="subscription__tab-item">
-              <h3>1 месяц</h3>
-              <ul class="subscription__list">
-                <li class="subscription__item">
-                  <h4>С тренером</h4>
-                  <span>12занятий</span>
-                  <p>5000 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-                <li class="subscription__item">
-                  <h4>Дневной</h4>
-                  <span>с 8:00 до 17:00</span>
-                  <p>1700 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-                <li class="subscription__item">
-                  <h4>Полный день</h4>
-                  <span>с 8:00 до 22:00</span>
-                  <p>2700 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-              </ul>
-            </li>
-            <li class="subscription__tab-item">
-              <h3>6 месяцев</h3>
-              <ul class="subscription__list">
-                <li class="subscription__item">
-                  <h4>С тренером</h4>
-                  <span>12занятий</span>
-                  <p>7000 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-                <li class="subscription__item">
-                  <h4>Дневной</h4>
-                  <span>с 8:00 до 17:00</span>
-                  <p>3700 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-                <li class="subscription__item">
-                  <h4>Полный день</h4>
-                  <span>с 8:00 до 22:00</span>
-                  <p>5700 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-              </ul>
-            </li>
-            <li class="subscription__tab-item">
-              <h3>12 месяцев</h3>
-              <ul class="subscription__list">
-                <li class="subscription__item">
-                  <h4>С тренером</h4>
-                  <span>12занятий</span>
-                  <p>9000 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-                <li class="subscription__item">
-                  <h4>Дневной</h4>
-                  <span>с 8:00 до 17:00</span>
-                  <p>5700 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-                <li class="subscription__item">
-                  <h4>Полный день</h4>
-                  <span>с 8:00 до 22:00</span>
-                  <p>7700 &#x20bd;</p>
-                  <a href="#" class="subscription__button">Купить абонемент</a>
-                </li>
-              </ul>
-            </li>
+            <li class="subscription__tab-item is-active" data-id="subscripe1" data-element="subscripe">1 месяц</li>
+            <li class="subscription__tab-item" data-id="subscripe6" data-element="subscripe">6 месяцев</li>
+            <li class="subscription__tab-item" data-id="subscripe12" data-element="subscripe">12 месяцев</li>
           </ul>
+          <div class="subscription__wrapper">
+            <ul class="subscription__list subscription__list--one-mounth is-open" data-element="subscripe-list" id="subscripe1">
+              <li class="subscription__item" >
+                <h3>С тренером</h3>
+                <span>12занятий</span>
+                <p>5000 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p>1700 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p>2700 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="subscription__list subscription__list--six-mounth" data-element="subscripe-list" id="subscripe6">
+              <li class="subscription__item">
+                <h3>С тренером</h3>
+                <span>12занятий</span>
+                <p>7000 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p>3700 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p>5700 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="subscription__list subscription__list--twelve-mounth" data-element="subscripe-list" id="subscripe12">
+              <li class="subscription__item">
+                <h3>С тренером</h3>
+                <span>12занятий</span>
+                <p>9000 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p>5700 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p>7700 <span>&#x20bd;</span></p>
+                <a href="#" class="subscription__button">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="order">
           <div class="order__container">
