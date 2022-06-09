@@ -979,18 +979,6 @@ ul {
 .page-main {
   width: 100%;
   background-color: #ffffff;
-  position: relative;
-}
-
-.page-main::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/dumbell.png");
-  background-repeat: no-repeat;
-  width: 287px;
-  height: 494px;
-  right: 0;
-  bottom: 0;
 }
 
 .description {
@@ -1181,25 +1169,14 @@ ul {
   padding: 0;
   background-color: #F8F9FC;
   padding-top: 119px;
-  padding-bottom: 120px;
+  padding-bottom: 115px;
   /*background-image: url("../img/dumbell.png");
   background-repeat: no-repeat;
   background-size: 287px 494px;
   background-position-x: right;
   background-position-y: 506px;
-  z-index: 10;*/
+;*/
 }
-
-/*.subscription::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/dumbell.png");
-  background-repeat: no-repeat;
-  width: 287px;
-  height: 494px;
-  right: 0;
-  bottom: 0;
-}*/
 
 .subscription h2 {
   margin: 0 auto;
@@ -1255,6 +1232,18 @@ ul {
   margin: 0 auto;
   padding: 0;
   width: 1160px;
+  position: relative;
+}
+
+.subscription h2::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/dumbell.png");
+  background-repeat: no-repeat;
+  width: 287px;
+  height: 494px;
+  right: 0;
+  top: 1920px;
 }
 
 .subscription__list {
@@ -1287,7 +1276,7 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 55px;
+  padding-top: 50px;
   padding-bottom: 65px;
   border: 7px solid #ffffff;
 }
@@ -1307,12 +1296,13 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #495A7D;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
 }
 
 .subscription__item p {
   margin: 0;
   padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -1348,8 +1338,236 @@ ul {
   user-select: none;
 }
 
-.order {
-  z-index: -1;
+.promo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 118px;
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 660px;
+  grid-template-columns: 500px 660px;
+}
+
+.promo__container {
+  margin: 0;
+  padding: 0;
+  background-color: #ED0233;
+  padding: 78px 76px;
+}
+
+.promo__container p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-top: 9px;
+  margin-bottom: 47px;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 346px;
+}
+
+.promo__description h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 205px;
+}
+
+.promo__calendar {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 4px;
+}
+
+.promo__day {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 95px;
+}
+
+.promo__day p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 65px;
+}
+
+.promo__date {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.promo__date p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  width: 55px;
+  padding-top: 12px;
+}
+
+.promo__date span {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.promo__time {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.promo__time p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+  width: 87px;
+}
+
+.promo__time span {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: #ffffff;
+}
+
+.promo__button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 343px;
+  padding: 25px 40px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.coaches {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.coaches h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-left: 105px;
+  color: #102654;
+}
+
+.coaches__slider {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+.coaches__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.coaches__item {
+  margin-right: 50px;
+  width: 200px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1396,6 +1614,11 @@ ul {
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     border: none;
     color: #ffffff;
+  }
+
+  .promo__button:hover {
+    border-color: #495A7D;
+    color: #495A7D;
   }
 }
 
@@ -1573,6 +1796,7 @@ ul {
 
   .subscription__item {
     width: 440px;
+    padding-top: 55px;
     margin-bottom: 40px;
     padding-bottom: 60px;
   }
@@ -1581,6 +1805,92 @@ ul {
     font-size: 26px;
     line-height: 29px;
     margin-bottom: 10px;
+  }
+
+  .promo {
+    padding-top: 48px;
+  }
+
+  .promo__wrapper {
+    width: 678px;
+    -ms-grid-columns: 292px 386px;
+    grid-template-columns: 292px 386px;
+  }
+
+  .promo__container {
+    padding: 45px 45px;
+  }
+
+  .promo__container p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 2px;
+    margin-bottom: 29px;
+  }
+
+  .promo__description {
+    width: 202px;
+  }
+
+  .promo__description h2 {
+    font-size: 52px;
+    line-height: 52px;
+    width: 117px;
+  }
+
+  .promo__calendar {
+    padding-left: 30px;
+    padding-top: 0;
+  }
+
+  .promo__day {
+    margin-bottom: 5px;
+  }
+
+  .promo__day p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .promo__date {
+    width: 71px;
+    margin-bottom: 0;
+  }
+
+  .promo__date p {
+    font-size: 10px;
+    line-height: 14px;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 1px;
+  }
+
+  .promo__date span {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .promo__time p {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .promo__time span {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .promo__button {
+    font-size: 10px;
+    line-height: 12px;
+    width: 202px;
+    padding: 13px 52px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1730,6 +2040,10 @@ ul {
     width: 320px;
   }
 
+  .subscription {
+    padding-bottom: 30px;
+  }
+
   .subscription h2 {
     font-size: 32px;
     line-height: 32px;
@@ -1779,5 +2093,24 @@ ul {
   .subscription__item p span {
     font-size: 48px;
     line-height: 72px;
+  }
+
+  .promo {
+    padding-top: 70px;
+  }
+
+  .promo__wrapper {
+    width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .promo__container {
+    padding-bottom: 50px;
   }
 }

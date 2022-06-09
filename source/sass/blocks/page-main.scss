@@ -1,16 +1,4 @@
 .page-main {
   width: 100%;
   background-color: $color-default-white;
-  position: relative;
-}
-
-.page-main::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/dumbell.png");
-  background-repeat: no-repeat;
-  width: 287px;
-  height: 494px;
-  right: 0;
-  bottom: 0;
 }

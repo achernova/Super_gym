@@ -1,0 +1,265 @@
+.promo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 118px;
+
+  @media (max-width: 1199px) {
+    padding-top: 48px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 70px;
+  }
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 500px 660px;
+
+
+  @media (max-width: 1199px) {
+    width: 678px;
+    grid-template-columns: 292px 386px;
+
+  }
+
+  @media (max-width: 767px) {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.promo__container {
+  margin: 0;
+  padding: 0;
+  background-color: $torch-red;
+  padding: 78px 76px;
+
+  @media (max-width: 1199px) {
+    padding: 45px 45px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+
+}
+
+.promo__container p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  margin-top: 9px;
+  margin-bottom: 47px;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 2px;
+    margin-bottom: 29px;
+  }
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 346px;
+
+  @media (max-width: 1199px) {
+    width: 202px;
+  }
+}
+
+.promo__description h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  width: 205px;
+
+  @media (max-width: 1199px) {
+    font-size: 52px;
+    line-height: 52px;
+    width: 117px;
+  }
+}
+
+.promo__calendar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+
+  @media (max-width: 1199px) {
+    padding-left: 30px;
+    padding-top: 0;
+  }
+}
+
+
+
+.promo__day {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 95px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 5px;
+  }
+}
+
+.promo__day p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  border-bottom: 2px solid $color-default-white;
+  width: 65px;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.promo__date {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80px;
+  margin-bottom: 5px;
+
+  @media (max-width: 1199px) {
+    width: 71px;
+    margin-bottom: 0;
+  }
+}
+
+.promo__date p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+  border: none;
+  width: 55px;
+  padding-top: 12px;
+
+  @media (max-width: 1199px) {
+    font-size: 10px;
+    line-height: 14px;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 1px;
+  }
+}
+
+.promo__date span {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $color-default-white;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+.promo__time {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__time p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  border-bottom: 2px solid $color-default-white;
+  padding-bottom: 5px;
+  width: 87px;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.promo__time span {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: $color-default-white;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+
+.promo__button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 343px;
+  padding: 25px 40px;
+  color: $color-default-white;
+  border: 2px solid $color-default-white;
+  user-select: none;
+
+  &:hover {
+    @media screen and (min-width: 1199px) {
+      border-color: $chambray;
+      color: $chambray;
+
+    }
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 10px;
+    line-height: 12px;
+    width: 202px;
+    padding: 13px 52px;
+    letter-spacing: 0.03em;
+  }
+}
