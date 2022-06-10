@@ -18,21 +18,77 @@
 }
 
 .coaches__slider {
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0;
-  display: block;
-  width: 100%;
+  width: 1165px;
+  height: 294px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.coaches__toggle-prev::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg/arrow-left.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 32px;
+  left: 0;
+  top: 163px;
+  cursor: pointer;
+}
+
+.coaches__toggle-next::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg/arrow-right.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 32px;
+  left: 50px;
+  top: 163px;
+  cursor: pointer;
 }
 
 .coaches__list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transition: 500ms;
+  width: calc(100% * 4);
 
+  height: 294px;
   display: flex;
-  flex-direction: row;
+  justify-content: start;
   flex-wrap: nowrap;
+  left: 0;
+
 }
 
 
 .coaches__item {
-  margin-right: 50px;
-  width: 200px;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  display: block;
+
+}
+
+.coaches__content {
+  position: relative;
+}
+
+.coaches__content p {
+  position: absolute;
+  top: 10px;
+    left: 10px;
+}
+
+.coaches__info {
+  margin: 0;
+  padding: 0;
+  display: none;
 }

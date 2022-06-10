@@ -1,26 +1,36 @@
+const prevToggle = document.querySelector('[data-element="prev"]');
+const nextToggle = document.querySelector('[data-element="next"]');
 const sliderCoach = document.querySelector('[data-element="slider"]');
-
+const slideWidth = document.querySelector('[data-element="slider__item"]').getBoundingClientRect().width;
 
 const getSlider = () => {
-  sliderCoach.slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  });
+
+  let slideLength = sliderCoach.querySelectorAll('[data-element="slider__item"]').length;
+
+  let now = 0;
+
+  let sliderOffset = [];
+
+  for (let i = 0; i < slideLength; i++) {
+    sliderOffset.push(-i * slideWidth + 'px');
+  }
+
+  prevToggle.onclick = function () {
+    --now;
+    if (now < 0) {
+      now = slideLength - 1;
+    }
+    sliderCoach.style.left = sliderOffset[now];
+  };
+
+  nextToggle.onclick = function () {
+    ++now;
+    if (now > slideLength - 1) {
+      now = 0;
+    }
+
+    sliderCoach.style.left = sliderOffset[now];
+  };
 };
 
-
 export {getSlider};
-
-/* $('.slider-nav').slick({
-   slidesToShow: 3,
-   slidesToScroll: 1,
-   asNavFor: '.slider-for',
-   dots: true,
-   focusOnSelect: true
- });
-
- $('a[data-slide]').click(function(e) {
-   e.preventDefault();
-   var slideno = $(this).data('slide');
-   $('.slider-nav').slick('slickGoTo', slideno - 1);
- }); */
