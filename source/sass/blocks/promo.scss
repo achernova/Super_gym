@@ -22,13 +22,17 @@
 
 
   @media (max-width: 1199px) {
-    width: 678px;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
     grid-template-columns: 292px 386px;
 
   }
 
   @media (max-width: 767px) {
-    width: 290px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
   }

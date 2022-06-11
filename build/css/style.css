@@ -1532,6 +1532,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 100%;
+  margin-bottom: 120px;
 }
 
 .coaches h2 {
@@ -1622,6 +1623,198 @@ ul {
   margin: 0;
   padding: 0;
   display: none;
+}
+
+.advantages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #F8F9FC;
+}
+
+.advantages h2 {
+  margin: 0 auto;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #102654;
+  margin-bottom: 80px;
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1165px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 240px 1fr;
+  grid-template-columns: 1fr 240px 1fr;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 463px;
+  padding-left: 60px;
+}
+
+.advantages__item {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 350px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages__item-count {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+.advantages__item-count p {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 60px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -o-linear-gradient(307.49deg, #D10A42 0%, #0041CA 87.33%);
+  background-image: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
+}
+
+.advantages__item-count--color p {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
+  background-image: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+}
+
+.advantages__item-count span {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2E35AC;
+}
+
+.advantages__item-block {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.advantages__item-block h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: #102654;
+}
+
+.advantages__item-block p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #102654;
+}
+
+.advantages__center {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 240px;
+  background-color: #1C3374;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.advantages__center p {
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 172px;
+}
+
+.advantages__center-count {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.advantages__center-count p {
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 60px;
+}
+
+.advantages__center-count span {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1828,11 +2021,13 @@ ul {
   }
 
   .subscription__wrapper {
-    width: 678px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .subscription__list {
-    width: 678px;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1849,7 +2044,7 @@ ul {
   }
 
   .subscription__item {
-    width: 440px;
+    width: 100%;
     padding-top: 55px;
     margin-bottom: 40px;
     padding-bottom: 60px;
@@ -1866,7 +2061,9 @@ ul {
   }
 
   .promo__wrapper {
-    width: 678px;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
     -ms-grid-columns: 292px 386px;
     grid-template-columns: 292px 386px;
   }
@@ -1946,11 +2143,127 @@ ul {
     padding: 13px 52px;
     letter-spacing: 0.03em;
   }
+
+  .coaches__slider {
+    width: 678px;
+  }
+
+  .advantages__wrapper {
+    width: 678px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .advantages__list {
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 678px;
+    margin-bottom: 50px;
+  }
+
+  .advantages__item-block h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .advantages__center {
+    margin: 0 auto;
+    width: 442px;
+    margin-bottom: 50px;
+  }
+
+  .advantages__center-count {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .advantages h2 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription__wrapper {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .coaches__slider {
+    width: 100%;
+  }
+
+  .advantages h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+  }
+
+  .advantages__list {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .advantages__item {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .advantages__item-count {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages__item-block {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .advantages__item-block h3 {
+    text-align: center;
+  }
+
+  .advantages__item-block p {
+    text-align: center;
+  }
+
+  .advantages__center {
+    width: 100%;
   }
 }
 
@@ -2041,19 +2354,21 @@ ul {
   }
 
   .description {
-    width: 320px;
+    width: 100%;
     margin-top: 49px;
     margin-bottom: 290px;
   }
 
   .description__wrapper {
-    width: 290px;
+    width: 100%;
     margin-bottom: 35px;
   }
 
   .description__container {
     text-align: left;
-    width: 290px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .description__container h2 {
@@ -2070,9 +2385,11 @@ ul {
   }
 
   .description__container p {
-    width: 260px;
+    width: 100%;
     text-align: left;
     margin-top: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .description__video {
@@ -2114,18 +2431,14 @@ ul {
     width: 97px;
   }
 
-  .subscription__wrapper {
-    width: 320px;
-  }
-
   .subscription__list {
-    width: 320px;
+    width: 100%;
   }
 
   .subscription__item {
     padding-top: 37px;
     padding-bottom: 46px;
-    width: 290px;
+    width: 100%;
     margin-bottom: 42px;
   }
 
@@ -2154,7 +2467,9 @@ ul {
   }
 
   .promo__wrapper {
-    width: 290px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
