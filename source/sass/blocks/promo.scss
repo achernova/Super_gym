@@ -3,7 +3,8 @@
   padding: 0;
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 118px;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
 
   @media (max-width: 1199px) {
     padding-top: 48px;
@@ -114,8 +115,6 @@
     padding-top: 0;
   }
 }
-
-
 
 .promo__day {
   margin: 0;
@@ -265,5 +264,11 @@
     width: 202px;
     padding: 13px 52px;
     letter-spacing: 0.03em;
+  }
+}
+
+.promo__img img {
+  @media (max-width: 767px) {
+    margin: 0 auto;
   }
 }

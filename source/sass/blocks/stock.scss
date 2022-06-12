@@ -1,0 +1,260 @@
+.stock {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.stock h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 58px;
+  color: $Sapphire;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding-left: 16px;
+    margin-bottom: 44px;
+  }
+}
+
+.stock__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 560px 560px;
+  column-gap: 40px;
+
+  @media (max-width: 1199px) {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.stock__main {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    width: 679px;
+    grid-template-columns: 280px 399px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.stock__description {
+  display: block;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  background-color: $torch-red;
+  color: $color-default-white;
+  text-align: left;
+  padding-top: 23px;
+  padding-left: 45px;
+
+  @media (max-width: 1199px) {
+    padding-top: 32px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 35px;
+  }
+}
+
+.stock__description h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.stock__description span {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.stock__description p {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 185px;
+
+  @media (max-width: 1199px) {
+    margin-top: 27px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 21px;
+  }
+}
+
+.stock__link {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-default-white;
+  padding-bottom: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.stock__img img {
+  @media (max-width: 1199px) {
+    width: 399px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.stock__container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 1199px) {
+    flex-direction: row;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.stock__block {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 560px;
+  border: 7px solid $color-default-white;
+  border-image: $border-gradient;
+  border-image-slice: 1;
+  text-align: left;
+  padding-top: 23px;
+  padding-left: 28px;
+  padding-bottom: 25px;
+
+  @media (max-width: 1199px) {
+    width: 324px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 39px;
+  }
+}
+
+.stock__block h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  color: $Sapphire;
+  margin-bottom: 5px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 13px;
+  }
+}
+
+.stock__block p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $Sapphire;
+  margin-bottom: 65px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: 768px) {
+    width: 159px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.stock__block-link {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $Sapphire;
+  text-transform: uppercase;
+  border-bottom: 1px $Sapphire;
+  padding-bottom: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.stock__block--discount h3 {
+  margin-bottom: 8px;
+}
+
+.stock__block--discount p {
+  margin-bottom: 66px;
+}
