@@ -4,6 +4,7 @@
   width: 100%;
   text-align: center;
   padding-top: 120px;
+  margin-bottom: 120px;
 }
 
 .stock h2 {
@@ -245,7 +246,7 @@
   letter-spacing: 0.05em;
   color: $Sapphire;
   text-transform: uppercase;
-  border-bottom: 1px $Sapphire;
+  border-bottom: 1px solid $Sapphire;
   padding-bottom: 3px;
   cursor: pointer;
   user-select: none;
