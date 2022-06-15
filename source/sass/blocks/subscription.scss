@@ -85,13 +85,31 @@
   @media (max-width: 767px) {
     font-size: 16px;
     line-height: 24px;
-    width: 97px;
+    width: 60px;
   }
 
   &:hover {
     @media screen and (min-width: 1199px) {
       opacity: 100%;
     }
+  }
+}
+
+.subscription__tab-item--1 {
+  @media (max-width: 767px) {
+    margin-right: 7px;
+  }
+}
+
+.subscription__tab-item--6 {
+  @media (max-width: 767px) {
+    width: 77px;
+  }
+}
+
+.subscription__tab-item--12 {
+  @media (max-width: 767px) {
+    width: 80px;
   }
 }
 
@@ -121,6 +139,7 @@
 }
 
 .subscription h2::after {
+  display: block;
   position: absolute;
   content: "";
   background-image: url("../img/dumbell.png");
@@ -129,6 +148,14 @@
   height: 494px;
   right: 0;
   top: 1920px;
+
+  @media (max-width: 1199px) {
+    top: 2829px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 
 }
 
@@ -141,7 +168,7 @@
   column-gap: 40px;
 
   @media (max-width: 1199px) {
-    width: 100%;
+    width: 442px;
     flex-direction: column;
     align-items: center;
   }
@@ -235,7 +262,6 @@
 .subscription__item p {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;

@@ -1,0 +1,24 @@
+.feedback {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+  border-top: 1px solid $Sapphire;
+
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

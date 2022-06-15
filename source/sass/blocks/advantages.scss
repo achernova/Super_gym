@@ -5,6 +5,10 @@
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: $ghost-white;
+
+  @media (max-width: 767px) {
+    padding-top: 67px;
+  }
 }
 
 .advantages h2 {
@@ -16,7 +20,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $Sapphire;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
 
   @media (max-width: 1165px) {
     font-size: 42px;
@@ -27,6 +31,7 @@
   @media (max-width: 768px) {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 47px;
   }
 }
 
@@ -55,7 +60,6 @@
   flex-direction: column;
   justify-content: space-between;
   width: 463px;
-  padding-left: 60px;
 
   @media (max-width: 1199px) {
     margin: auto;
@@ -73,6 +77,14 @@
   }
 }
 
+.advantages__list--left {
+  padding-left: 86px;
+}
+
+.advantages__list--right {
+  padding-left: 62px;
+}
+
 .advantages__item {
   margin: 0;
   padding: 0;
@@ -84,7 +96,7 @@
   @media (max-width: 768px) {
     width: 100%;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 19px;
   }
 }
 
@@ -98,6 +110,7 @@
 
   @media (max-width: 768px) {
     align-items: center;
+    margin-right: 0;
   }
 }
 
@@ -110,6 +123,10 @@
   color: transparent;
   background-clip: text;
   background-image: $number-gradient1;
+
+  @media (max-width: 768px) {
+    font-size: 58px;
+  }
 }
 
 .advantages__item-count--color p {
@@ -182,8 +199,8 @@
   background-color: $resolution-blue;
   color: $color-default-white;
   text-align: center;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 54px;
+  padding-bottom: 54px;
 
   @media (max-width: 1199px) {
     margin: 0 auto;
@@ -191,11 +208,11 @@
     margin-bottom: 50px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 100%;
-
+    padding-top: 48px;
+    padding-bottom: 40px;
   }
-
 }
 
 .advantages__center p {
@@ -215,6 +232,10 @@
   @media (max-width: 1199px) {
     margin-bottom: 30px;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__center-count p {
@@ -223,6 +244,11 @@
   font-weight: 700;
   font-size: 71px;
   line-height: 60px;
+  margin-bottom: 10px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__center-count span {
@@ -231,4 +257,8 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 39px;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
 }

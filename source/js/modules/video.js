@@ -1,4 +1,4 @@
-const videoPlayer = document.querySelector('.js-videoPoster');
+const videoPlayer = document.querySelector('[data-element="video-button"]');
 
 const playVideo = () => {
   videoPlayer.addEventListener('click', function (e) {
@@ -11,10 +11,9 @@ const playVideo = () => {
   function videoPlay(wrapper) {
     let iframe = wrapper.querySelector('.js-videoIframe');
     let src = iframe.getAttribute('data-src');
-    wrapper.classList.add('videoWrapperActive');
+    wrapper.classList.add('is-active');
     iframe.setAttribute('src', src);
   }
 };
 
 export {playVideo};
-

@@ -66,7 +66,7 @@
             <div class="description__container">
               <h2>Тренажерный зал</h2>
               <span>Просторный зал площадью 900 кв/м</span>
-              <p>Supergym – самый большой фитнес центр за Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+              <p>Supergym – самый большой фитнес центр за Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
             </div>
             <div class="description__paragraph">
               <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
@@ -83,17 +83,17 @@
             <!--660  1320-->
             <img src="img/jym.jpg" srcset="img/jym@2x.jpg 2x" alt="фото зала" width="660" height="401">
           </picture>
-          <div class="description__video video__wrapper video__wrapper_full js-videoWrapper" data-element="video">
-            <iframe class="videoIframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="" allowTransparency="true" data-element="iframe"></iframe>
-            <button class="videoPoster js-videoPoster"></button>
+          <div class="description__video description__video-full js-videoWrapper" data-element="video">
+            <iframe class="description__iframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="" allowTransparency="true" data-element="iframe"></iframe>
+            <button class="description__button js-videoPoster" data-element="video-button"></button>
           </div>
         </section>
         <section class="subscription">
           <h2>Абонементы</h2>
           <ul class="subscription__tab-list">
-            <li class="subscription__tab-item is-active" data-id="subscripe1" data-element="subscripe">1 месяц</li>
-            <li class="subscription__tab-item" data-id="subscripe6" data-element="subscripe">6 месяцев</li>
-            <li class="subscription__tab-item" data-id="subscripe12" data-element="subscripe">12 месяцев</li>
+            <li class="subscription__tab-item subscription__tab-item--1 is-active" data-id="subscripe1" data-element="subscripe">1 месяц</li>
+            <li class="subscription__tab-item subscription__tab-item--6" data-id="subscripe6" data-element="subscripe">6 месяцев</li>
+            <li class="subscription__tab-item subscription__tab-item--12" data-id="subscripe12" data-element="subscripe">12 месяцев</li>
           </ul>
           <div class="subscription__wrapper">
             <ul class="subscription__list subscription__list--one-mounth is-open" data-element="subscripe-list" id="subscripe1">
@@ -195,7 +195,8 @@
         </section>
         <section class="coaches">
           <h2>Тренеры</h2>
-          <div class="coaches__slider">
+
+          <div class="coaches__slider" data-element="viewport">
             <ul class="coaches__list" data-element="slider">
               <li class="coaches__item" data-element="slider__item">
                 <div class="coaches__content">
@@ -211,13 +212,13 @@
                 </picture>
                 <p>Анна Павлова</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Анна Павлова</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -235,13 +236,13 @@
                   </picture>
                   <p>Алексей Лавров</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Алексей Лавров</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -259,13 +260,13 @@
                   </picture>
                   <p>Александр Пашков</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Александр Пашков</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -283,13 +284,13 @@
                   </picture>
                   <p>Мария Кетова</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Мария Кетова</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -307,13 +308,13 @@
                 </picture>
                 <p>Анна Павлова</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Анна Павлова</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -331,13 +332,13 @@
                   </picture>
                   <p>Алексей Лавров</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Алексей Лавров</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -355,13 +356,13 @@
                   </picture>
                   <p>Александр Пашков</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Александр Пашков</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
@@ -379,31 +380,31 @@
                   </picture>
                   <p>Мария Кетова</p>
                 </div>
-                <div class="coaches__info">
+                <div class="coaches__info" data-element="card">
                   <h3>Мария Кетова</h3>
                   <p>CrossFit</p>
                   <ul class="coaches__info-list">
-                    <li class="coaches__info-item">Certified level 3 Trainer</li>
-                    <li class="coaches__info-item">Победитель чесмпионата России по CrossFit</li>
-                    <li class="coaches__info-item">Опыт 6 лет</li>
+                    <li class="coaches__info-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__info-item">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="coaches__info-item">Опыт - 6 лет</li>
                   </ul>
                 </div>
               </li>
             </ul>
-
-            <div class="coaches__toggle-prev" data-element="prev">
+            <div class="coaches__toggle-prev" data-direction="left" data-element="button">
               <span class="visually-hidden">назад</span>
             </div>
-            <div class="coaches__toggle-next" data-element="next">
+            <div class="coaches__toggle-next" data-direction="right" data-element="button">
               <span class="visually-hidden">вперед</span>
             </div>
+
           </div>
         </section>
 
         <section class="advantages">
           <h2>Наши преимущества</h2>
           <div class="advantages__wrapper">
-            <ul class="advantages__list advantages__list---left">
+            <ul class="advantages__list advantages__list--left">
               <li class="advantages__item">
                 <div class="advantages__item-count advantages__item-count--color">
                   <p>900</p>
@@ -510,8 +511,8 @@
                     <img src="img/Anna.png" srcset="img/Anna@2x.png 2x" alt="Анна" width="80" height="80">
                     </picture>
                     <p>Анна Орлова</p>
-                  </div>             
-                  
+                  </div>
+
                   <div class="reviews__description">
                     <h3>Анна Орлова</h3>
                     <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&#187;</p>
@@ -528,7 +529,7 @@
                       <img src="img/Anna.png" srcset="img/Anna@2x.png 2x" alt="Анна" width="80" height="80">
                     </picture>
                     <p>Марина Петрова</p>
-                  </div>                  
+                  </div>
                   <div class="reviews__description">
                     <h3>Марина Петрова</h3>
                     <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&#187;</p>
@@ -546,7 +547,7 @@
                     </picture>
                     <p>Елена Иванова</p>
                   </div>
-                  
+
                   <div class="reviews__description">
                     <h3>Елена Иванова</h3>
                     <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&#187;</p>
@@ -563,103 +564,111 @@
             </div>
           </div>
         </section>
+
         <section class="feedback">
           <h2 class="visually-hidden">Обратная связь</h2>
-
-          <div class="form-fiidback">
-            <h3>Бесплатное занятие</h3>
-            <form action="https://echo.htmlacademy.ru" method="POST" class="form-fiidback__container">
-              <div class="form-fiidback__wrapper">
-                <div class="form-fiidback__content form-fiidback__content--name">
-                  <label class="form-fiidback__content-label form-fiidback__content-label--name" for="name">Имя</label>
-                  <input type="text" name="name" id="name" placeholder="Имя" required>
+          <div class="feedback__wrapper">
+            <div class="form-feedback">
+              <h3>Бесплатное занятие</h3>
+              <form action="https://echo.htmlacademy.ru" method="POST" class="form-feedback__container">
+                <div class="form-feedback__wrapper">
+                  <div class="form-feedback__content form-feedback__content--name">
+                    <label class="form-feedback__content-label form-feedback__content-label--name" for="name">Имя</label>
+                    <input type="text" name="name" id="name" required>
+                  </div>
+                  <div class="form-feedback__content form-feedback__content--phone">
+                    <label class="form-feedback__content-label form-feedback__content-label--phone" for="phone">Телефон:</label>
+                    <input type="tel" name="phone" id="phone" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[\]{0,1}\d{2}[\]{0,1}\d{2}" minlength="11" maxlength="14">
+                  </div>
                 </div>
-                <div class="form-fiidback__content form-fiidback__content--phone">
-                  <label class="form-fiidback__content-label form-fiidback__content-label--phone" for="phone">Телефон:</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[\]{0,1}\d{2}[\]{0,1}\d{2}" minlength="14" maxlength="14">
+                <button class="form-feedback__button" type="submit">Отправить</button>
+              </form>
+            </div>
+
+            <div class="contacts">
+              <h2>Контакты</h2>
+              <div class="contacts__wrapper">
+                <div class="contacts__container contacts__container--left">
+                  <div class="contacts__item contacts__item--addres">
+                    <h3>Адрес:</h3>
+                    <p>г. Омск, ул. 60 лет Октября, 7</p>
+                  </div>
+                  <div class="contacts__item">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </div>
+                </div>
+                <div class="contacts__container contacts__container--right">
+                  <div class="contacts__item contacts__item--phone">
+                    <h3>Телефон:</h3>
+                    <a class="contacts__phone" href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                  <div class="contacts__item contacts__item--mail">
+                    <h3>Email:</h3>
+                    <a class="contacts__mail" href="omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
                 </div>
               </div>
-              <button class="form-fiidback__button" type="submit">Отправить</button>
-            </form>
+            </div>
           </div>
 
-          <div class="contacts">
-            <h2>Контакты</h2>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <h3>Адрес:</h3>
-                <p>г. Омск, ул. 60 лет Октября</p>
-              </li>
-              <li class="contacts__item">
-                <h3>График работы:</h3>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </li>
-              <li class="contacts__item">
-                <h3>Телефон:</h3>
-                <a class="contacts__phone" href="tel:88005555555">8-800-555-55-55</a>
-              </li>
-              <li class="contacts__item">
-                <h3>Email:</h3>
-                <a class="contacts__mail" href="omsk@supergym.ru">8-800-555-55-55</a>
-              </li>
-            </ul>
-          </div>
         </section>
       </main>
       <footer class="page-footer">
-        <a class="page-footer__logo">
-          <span class="visually-hidden">Логотип supergym</span>
-            <svg width="87" height="20">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-        </a>
-        <nav class="page-footer__navigation">
-          <ul class="page-footer__navigation-list">
-            <li class="page-footer__navigation-item">
-              <a href="#" class="page-footer__navigation-link">Услуги</a>
-            </li>
-            <li class="page-footer__navigation-item">
-              <a href="#" class="page-footer__navigation-link">Абонементы</a>
-            </li>
-            <li class="page-footer__navigation-item">
-              <a href="#" class="page-footer__navigation-link">Акции</a>
-            </li>
-            <li class="page-footer__navigation-item">
-              <a href="#" class="page-footer__navigation-link">Тренеры</a>
-            </li>
-            <li class="page-footer__navigation-item">
-              <a href="#" class="page-footer__navigation-link">Рассписание</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a href="#" class="page-footer__link">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="page-footer__logo" width="30" height="30">
-                <use xlink:href="img/sprite.svg#vk"></use>
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo">
+            <span class="visually-hidden">Логотип supergym</span>
+              <svg width="87" height="20">
+                <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <span class="visually-hidden">instagramm</span>
-            <a class="page-footer__social-link" href="#">
-            <svg class="page-footer__logo-social" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-instagramm"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a href="#" class="page-footer__link">
-              <span class="visually-hidden">facebook</span>
-              <svg class="page-footer__logo" width="30" height="30">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
+          </a>
+          <nav class="page-footer__navigation">
+            <ul class="page-footer__navigation-list">
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Услуги</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Абонементы</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Акции</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Тренеры</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Рассписание</a>
+              </li>
+            </ul>
+          </nav>
+            <ul class="page-footer__social-list">
+              <li class="page-footer__social-item">
+                <a href="#" class="page-footer__link">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="page-footer__logo" width="24" height="13">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__social-item">
+                <span class="visually-hidden">instagramm</span>
+                <a class="page-footer__social-link" href="#">
+                <svg class="page-footer__logo-social" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-instagramm"></use>
+                </svg>
+                </a>
+              </li>
+              <li class="page-footer__social-item">
+                <a href="#" class="page-footer__link">
+                  <span class="visually-hidden">facebook</span>
+                  <svg class="page-footer__logo" width="12" height="24">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </div>
 
-
-        </ul>
       </footer>
     </div>
 
