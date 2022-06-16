@@ -19,7 +19,7 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
   color: $Sapphire;
 
   @media (max-width: 1199px) {
@@ -91,7 +91,7 @@
   background-color: $torch-red;
   color: $color-default-white;
   text-align: left;
-  padding-top: 23px;
+  padding-top: 28px;
   padding-left: 45px;
 
   @media (max-width: 1199px) {
@@ -151,6 +151,13 @@
   padding-bottom: 3px;
   cursor: pointer;
   user-select: none;
+
+  &:hover {
+    @media screen and (min-width: 1200px) {
+      color: $Sapphire;
+      border-color: $Sapphire;
+    }
+  }
 }
 
 .stock__img img {
@@ -253,6 +260,13 @@
   padding-bottom: 3px;
   cursor: pointer;
   user-select: none;
+
+  &:hover {
+    @media screen and (min-width: 1200px) {
+      color: $torch-red;
+      border-color: $torch-red;
+    }
+  }
 }
 
 .stock__block--mounth {

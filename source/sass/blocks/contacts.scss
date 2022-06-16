@@ -5,7 +5,7 @@
   background-color: $color-default-white;
   color: $Sapphire;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
 
   @media (max-width: 1199px) {
     padding-left: 134px;
@@ -104,7 +104,7 @@
 }
 
 .contacts__container--right {
-  padding-left: 46px;
+  padding-left: 47px;
 
   @media (max-width: 1199px) {
     padding-left: 46px;
@@ -165,4 +165,10 @@
   @media (max-width: 767px) {
     margin-top: 13px;
   }
+}
+
+.contacts__phone,
+.contacts__mail {
+  font-size: 14px;
+  line-height: 21px;
 }

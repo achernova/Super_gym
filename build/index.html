@@ -97,23 +97,26 @@
           </ul>
           <div class="subscription__wrapper">
             <ul class="subscription__list subscription__list--one-mounth is-open" data-element="subscripe-list" id="subscripe1">
-              <li class="subscription__item" >
+              <li class="subscription__item">
                 <h3>С тренером</h3>
                 <span>12 занятий</span>
-                <p>5000 <span>&#x20bd;</span></p>
+                <p>5000<span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">5000</div>
               </li>
               <li class="subscription__item">
                 <h3>Дневной</h3>
                 <span>с 8:00 до 17:00</span>
                 <p>1700 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">1700</div>
               </li>
               <li class="subscription__item">
                 <h3>Полный день</h3>
                 <span>с 8:00 до 22:00</span>
                 <p>2700 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">2700</div>
               </li>
             </ul>
             <ul class="subscription__list subscription__list--six-mounth" data-element="subscripe-list" id="subscripe6">
@@ -122,18 +125,21 @@
                 <span>12 занятий</span>
                 <p>7000 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">7000</div>
               </li>
               <li class="subscription__item">
                 <h3>Дневной</h3>
                 <span>с 8:00 до 17:00</span>
                 <p>3700 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">3700</div>
               </li>
               <li class="subscription__item">
                 <h3>Полный день</h3>
                 <span>с 8:00 до 22:00</span>
                 <p>5700 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">5700</div>
               </li>
             </ul>
             <ul class="subscription__list subscription__list--twelve-mounth" data-element="subscripe-list" id="subscripe12">
@@ -142,18 +148,21 @@
                 <span>12 занятий</span>
                 <p>9000 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">9000</div>
               </li>
               <li class="subscription__item">
                 <h3>Дневной</h3>
                 <span>с 8:00 до 17:00</span>
                 <p>5700 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">5700</div>
               </li>
               <li class="subscription__item">
                 <h3>Полный день</h3>
                 <span>с 8:00 до 22:00</span>
                 <p>7700 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button">Купить абонемент</a>
+                <div class="subscription__shadow">7700</div>
               </li>
             </ul>
           </div>
@@ -195,7 +204,14 @@
         </section>
         <section class="coaches">
           <h2>Тренеры</h2>
-
+          <div class="coaches__toggle">
+            <div class="coaches__toggle-prev" data-direction="left" data-element="button">
+              <span class="visually-hidden">назад</span>
+            </div>
+            <div class="coaches__toggle-next" data-direction="right" data-element="button">
+              <span class="visually-hidden">вперед</span>
+            </div>
+          </div>
           <div class="coaches__slider" data-element="viewport">
             <ul class="coaches__list" data-element="slider">
               <li class="coaches__item" data-element="slider__item">
@@ -391,13 +407,7 @@
                 </div>
               </li>
             </ul>
-            <div class="coaches__toggle-prev" data-direction="left" data-element="button">
-              <span class="visually-hidden">назад</span>
-            </div>
-            <div class="coaches__toggle-next" data-direction="right" data-element="button">
-              <span class="visually-hidden">вперед</span>
-            </div>
-
+          <div>
           </div>
         </section>
 
@@ -405,7 +415,7 @@
           <h2>Наши преимущества</h2>
           <div class="advantages__wrapper">
             <ul class="advantages__list advantages__list--left">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--900">
                 <div class="advantages__item-count advantages__item-count--color">
                   <p>900</p>
                   <span>кв/м</span>
@@ -415,26 +425,7 @@
                   <p>Занимайтесь без очередей и&nbsp;толпучки</p>
                 </div>
               </li>
-              <li class="advantages__item">
-                <div class="advantages__item-count">
-                  <p>350</p>
-                  <span>мест</span>
-                </div>
-                <div class="advantages__item-block">
-                  <h3>Комфорт</h3>
-                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-                </div>
-              </li>
-            </ul>
-            <div class="advantages__center">
-              <div class="advantages__center-count">
-                <p>100</p>
-                <span>Тренажеров</span>
-              </div>
-              <p>Современные тренажеры на&nbsp;все группы мышц</p>
-            </div>
-            <ul class="advantages__list advantages__list--right">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--70">
                 <div class="advantages__item-count">
                   <p>70</p>
                   <span>Машин</span>
@@ -444,7 +435,17 @@
                   <p>Вы всегда найдете место для своей машины на&nbsp;нашей парковке</p>
                 </div>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--350">
+                <div class="advantages__item-count">
+                  <p>350</p>
+                  <span>мест</span>
+                </div>
+                <div class="advantages__item-block">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--5">
                 <div class="advantages__item-count">
                   <p>5+</p>
                   <span>Лет</span>
@@ -455,6 +456,13 @@
                 </div>
               </li>
             </ul>
+            <div class="advantages__center">
+              <div class="advantages__center-count">
+                <p>100</p>
+                <span>Тренажеров</span>
+              </div>
+              <p>Современные тренажеры на&nbsp;все группы мышц</p>
+            </div>
           </div>
 
         </section>

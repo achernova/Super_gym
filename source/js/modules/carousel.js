@@ -17,7 +17,7 @@ function swipedetect(el, callback) {
   let elapsedTime;
   let startTime;
   let element;
-  let handleswipe = callback || function (swipedir) {};
+  let handleswipe = callback || function () {};
 
   touchsurface.addEventListener('touchstart', function (e) {
     let touchobj = e.changedTouches[0];
@@ -62,24 +62,30 @@ const getCarousel = () => {
     carouselList.style.marginLeft = position + 'px';
   };
 
+  for (let i = 0; i < carouseItem.length; i++) {
+    if (carouseItem[i] === 0) {
+      prevToggle.classList.add('is-disable');
+    } else if (carouseItem[i] > carouseItem.length) {
+      nextToggle.classList.add('is-disable');
+    }
+  }
+
   swipedetect(carouselList, function (swipedir) {
     if (swipedir === 'left' || swipedir === 'right') {
-      carouseItem.addEventListener('touchmove', function () {
-        if (swipedir === 'left') {
-          position -= width;
-          position = Math.max(position, -width * (countItems - 1));
-          carouselList.style.marginLeft = position + 'px';
-        } else if (swipedir === 'right') {
-          position -= width;
-          position = Math.max(position, -width * (countItems - 1));
-          carouselList.style.marginLeft = position + 'px';
-        }
-      });
+      if (swipedir === 'left') {
+        position -= width;
+        position = Math.max(position, -width * (countItems - 1));
+        carouselList.style.marginLeft = position + 'px';
+      } else if (swipedir === 'right') {
+        position += width;
+        position = Math.min(position, 0);
+        carouselList.style.marginLeft = position + 'px';
+      }
     }
   });
 };
 
 export {getCarousel};
 
-/* prev.classList.toggle('disabled', slideIndex === 0);
-    next.classList.toggle('disabled', slideIndex === --slides.length);*/
+/* prevToggle.classList.toggle('disabled', slideIndex === 0);
+    nextToggle.classList.toggle('disabled', slideIndex === --slides.length);*/

@@ -230,11 +230,7 @@
     -webkit-transition-delay: 0s, 0s;
     -moz-transition-delay: 0s, 0s;
     transition-delay: 0s, 0s;
-
-}
-
-.description__button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .description__button::before {
@@ -247,6 +243,21 @@
   background-image: url('../img/svg/play.svg');
   background-repeat: no-repeat;
   cursor: pointer;
+  opacity: 1;
+
+  @media (max-width: 1199px) {
+    top: 28%;
+    left: 35%;
+    background-image: url('../img/svg/play-tablet.svg');
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.description__button:hover::before {
+  @media screen and (min-width: 1200px) {
+    opacity: 0.5;
+  }
 }
 
 .is-active .description__button {

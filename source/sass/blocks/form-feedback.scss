@@ -147,4 +147,11 @@
   @media (max-width: 767px) {
     width: 290px;
   }
+
+  &:hover {
+    @media screen and (min-width: 1200px) {
+      color: $Sapphire;
+      background-color: $color-default-white;
+    }
+  }
 }

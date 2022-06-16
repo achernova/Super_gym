@@ -1,11 +1,7 @@
-/* const prevToggle = document.querySelector('[data-element="prev"]');
-const nextToggle = document.querySelector('[data-element="next"]');*/
 const buttons = document.querySelectorAll('[data-element="button"]');
 const sliderCoach = document.querySelector('[data-element="slider"]');
-// const sliderItem = document.querySelectorAll('[data-element="slider__item"]');
-// const viewport = document.querySelector('[data-element="viewport"]');
-
-const cards = document.querySelectorAll('[data-element="card"]');
+const sliderItems = document.querySelector('[data-element="slider__item"]');
+// const cards = document.querySelectorAll('[data-element="card"]');
 
 function swipedetect(el, callback) {
   let touchsurface = el;
@@ -20,7 +16,7 @@ function swipedetect(el, callback) {
   let elapsedTime;
   let startTime;
   let element;
-  let handleswipe = callback || function (swipedir) {};
+  let handleswipe = callback || function () {};
 
   touchsurface.addEventListener('touchstart', function (e) {
     let touchobj = e.changedTouches[0];
@@ -79,29 +75,27 @@ const getSlider = function getSlider() {
   }
 };
 
-const initSwiper = () => {
-
-};
-
 const getInfo = () => {
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('click', function (evt) {
-      for (let r = 0; r < cards.length; r++) {
-        cards[r].classList.remove('is-active');
+  for (let i = 0; i < sliderItems.length; i++) {
+    sliderItems[i].addEventListener('click', function (evt) {
+      for (let r = 0; r < sliderItems.length; r++) {
+        sliderItems[r].classList.remove('is-active');
       }
-      const card = evt.target.closest('[data-element="card"]');
-      card.classList.add('is-active');
+      const sliderItem = evt.target.closest('[data-element="slider__item"]');
+      sliderItem.classList.add('is-active');
     }, {passive: true});
 
-    cards[i].addEventListener('focus', function (evt) {
-      for (let q = 0; q < cards.length; q++) {
-        cards[q].classList.remove('is-active');
+    sliderItems[i].addEventListener('focus', function (evt) {
+      for (let q = 0; q < sliderItems.length; q++) {
+        sliderItems[q].classList.remove('is-active');
       }
-      const card = evt.target.closest('[data-element="card"]');
-      card.classList.add('is-active');
+      const sliderItem = evt.target.closest('[data-element="card"]');
+      sliderItem.classList.add('is-active');
     });
   }
+
+  console.warn(getInfo);
 };
 
 
-export {getInfo, initSwiper, getSlider};
+export {getInfo, getSlider};

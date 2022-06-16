@@ -2,10 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {playVideo} from './modules/video.js';
 import {getTabs} from './modules/tabs.js';
-// import {getSlider} from './modules/coaches-slider.js';
 import {getSlider} from './modules/coaches-slider.js';
 import {getInfo} from './modules/coaches-slider.js';
-import {initSwiper} from './modules/coaches-slider.js';
 import {getCarousel} from './modules/carousel.js';
 
 
@@ -20,10 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   playVideo();
   getTabs();
-  // getSlider();
   getCarousel();
   getInfo();
-  initSwiper();
   getSlider();
 
   // Modules

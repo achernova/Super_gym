@@ -55,6 +55,18 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 39px;
+  // border-bottom: 2px solid $tab-color;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 341px;
+    background-color: $tab-color;
+    top: 39px;
+    left: 0;
+  }
 
   @media (max-width: 1199px) {
     margin-bottom: 44px;
@@ -74,7 +86,6 @@
   opacity: 50%;
   cursor: pointer;
   width: 113px;
-  border-bottom: 2px solid $tab-color;
   padding-bottom: 10px;
 
   @media (max-width: 1199px) {
@@ -96,18 +107,29 @@
 }
 
 .subscription__tab-item--1 {
+  width: 67px;
   @media (max-width: 767px) {
     margin-right: 7px;
   }
 }
 
 .subscription__tab-item--6 {
+  width: 88px;
+
+  @media (max-width: 1199px) {
+    width: 78px;
+  }
   @media (max-width: 767px) {
     width: 77px;
   }
 }
 
 .subscription__tab-item--12 {
+  width: 98px;
+
+  @media (max-width: 1199px) {
+    width: 93px;
+  }
   @media (max-width: 767px) {
     width: 80px;
   }
@@ -151,6 +173,9 @@
 
   @media (max-width: 1199px) {
     top: 2829px;
+    background-image: url("../img/dumbell-tablet.png");
+    width: 249px;
+    height: 345px;
   }
 
   @media (max-width: 768px) {
@@ -197,6 +222,8 @@
   padding-top: 50px;
   padding-bottom: 65px;
   border: 7px solid $color-default-white;
+  position: relative;
+
 
   @media (max-width: 1199px) {
     width: 100%;
@@ -267,6 +294,7 @@
   line-height: 90px;
   color: $egyptian-blue;
   margin-bottom: 34px;
+  z-index: 100;
 
   @media (max-width: 767px) {
     font-size: 48px;
@@ -303,4 +331,30 @@
   border: 2px solid $resolution-blue;
   text-align: center;
   user-select: none;
+}
+
+.subscription__shadow {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: $tory-blue;
+  left: 64px;
+  top: 131px;
+
+  @media (max-width: 1199px) {
+    left: 113px;
+  }
+
+}
+
+.subscription__shadow span {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $tory-blue;
 }
