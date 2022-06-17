@@ -46,8 +46,8 @@
     width: 68px;
     height: 15px;
   }
-
 }
+
 .page-header__phone {
   font-family: "Bebas Neue", "Arial", cursive;
   font-weight: 400;
@@ -243,7 +243,6 @@
       background-color: $resolution-blue;
       border-color: $chambray;
       color: $chambray;
-
     }
   }
 
@@ -258,8 +257,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
-
 }
 
 .page-header__social {
@@ -271,7 +268,7 @@
   align-items: center;
   margin-bottom: 44px;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }

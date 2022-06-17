@@ -16,13 +16,13 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="page-header__top">
-          <a class="page-header__logo">
+          <a class="page-header__logo" tabindex="1">
             <span class="visually-hidden">Логотип supergym</span>
             <svg width="87" height="20">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <a href="tel:88005555555" class="page-header__phone">8-800-555-55-55</a>
+          <a href="tel:88005555555" class="page-header__phone" tabindex="2">8-800-555-55-55</a>
         </div>
         <div class="page-header__intro">
           <div class="page-header__intro-container">
@@ -34,9 +34,8 @@
                 <li class="page-header__intro-item">Кардио-зона</li>
               </ul>
               <h2>Фитнес центр</h2>
-
             </div>
-            <a href="subscription" class="page-header__intro-link">Купить абонемент</a>
+            <a href="subscription" class="page-header__intro-link" tabindex="3">Купить абонемент</a>
           </div>
           <picture class="page-header__intro-img">
             <!--324 648 -->
@@ -48,13 +47,13 @@
           </picture>
           <ul class="page-header__social">
             <li class="page-header__social-item">
-              <a href="#">fb</a>
+              <a href="#" tabindex="4">fb</a>
             </li>
             <li class="page-header__social-item">
-              <a href="#">vk</a>
+              <a href="#" tabindex="5">vk</a>
             </li>
             <li class="page-header__social-item">
-              <a href="#">ig</a>
+              <a href="#" tabindex="6">ig</a>
             </li>
           </ul>
         </div>
@@ -72,7 +71,6 @@
               <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
           </div>
-
           <picture class="description__img">
             <!--320 640 -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/jym-mobile.webp 1x, img/jym-mobile@2x.webp 2x">
@@ -84,16 +82,16 @@
             <img src="img/jym.jpg" srcset="img/jym@2x.jpg 2x" alt="фото зала" width="660" height="401">
           </picture>
           <div class="description__video description__video-full js-videoWrapper" data-element="video">
-            <iframe class="description__iframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="" allowTransparency="true" data-element="iframe"></iframe>
-            <button class="description__button js-videoPoster" data-element="video-button"></button>
+            <iframe class="description__iframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" data-element="iframe"></iframe>
+            <button class="description__button js-videoPoster" data-element="video-button" tabindex="7"></button>
           </div>
         </section>
         <section class="subscription">
           <h2>Абонементы</h2>
           <ul class="subscription__tab-list">
-            <li class="subscription__tab-item subscription__tab-item--1 is-active" data-id="subscripe1" data-element="subscripe">1 месяц</li>
-            <li class="subscription__tab-item subscription__tab-item--6" data-id="subscripe6" data-element="subscripe">6 месяцев</li>
-            <li class="subscription__tab-item subscription__tab-item--12" data-id="subscripe12" data-element="subscripe">12 месяцев</li>
+            <li class="subscription__tab-item subscription__tab-item--1 is-active" data-id="subscripe1" data-element="subscripe" tabindex="8">1 месяц</li>
+            <li class="subscription__tab-item subscription__tab-item--6" data-id="subscripe6" data-element="subscripe" tabindex="9">6 месяцев</li>
+            <li class="subscription__tab-item subscription__tab-item--12" data-id="subscripe12" data-element="subscripe" tabindex="10">12 месяцев</li>
           </ul>
           <div class="subscription__wrapper">
             <ul class="subscription__list subscription__list--one-mounth is-open" data-element="subscripe-list" id="subscripe1">
@@ -101,21 +99,21 @@
                 <h3>С тренером</h3>
                 <span>12 занятий</span>
                 <p>5000<span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="11">Купить абонемент</a>
                 <div class="subscription__shadow">5000</div>
               </li>
               <li class="subscription__item">
                 <h3>Дневной</h3>
                 <span>с 8:00 до 17:00</span>
                 <p>1700 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="12">Купить абонемент</a>
                 <div class="subscription__shadow">1700</div>
               </li>
               <li class="subscription__item">
                 <h3>Полный день</h3>
                 <span>с 8:00 до 22:00</span>
                 <p>2700 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="13">Купить абонемент</a>
                 <div class="subscription__shadow">2700</div>
               </li>
             </ul>
@@ -124,21 +122,21 @@
                 <h3>С тренером</h3>
                 <span>12 занятий</span>
                 <p>7000 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="14">Купить абонемент</a>
                 <div class="subscription__shadow">7000</div>
               </li>
               <li class="subscription__item">
                 <h3>Дневной</h3>
                 <span>с 8:00 до 17:00</span>
                 <p>3700 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="15">Купить абонемент</a>
                 <div class="subscription__shadow">3700</div>
               </li>
               <li class="subscription__item">
                 <h3>Полный день</h3>
                 <span>с 8:00 до 22:00</span>
                 <p>5700 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="16">Купить абонемент</a>
                 <div class="subscription__shadow">5700</div>
               </li>
             </ul>
@@ -147,21 +145,21 @@
                 <h3>С тренером</h3>
                 <span>12 занятий</span>
                 <p>9000 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="17">Купить абонемент</a>
                 <div class="subscription__shadow">9000</div>
               </li>
               <li class="subscription__item">
                 <h3>Дневной</h3>
                 <span>с 8:00 до 17:00</span>
                 <p>5700 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="18">Купить абонемент</a>
                 <div class="subscription__shadow">5700</div>
               </li>
               <li class="subscription__item">
                 <h3>Полный день</h3>
                 <span>с 8:00 до 22:00</span>
                 <p>7700 <span>&#x20bd;</span></p>
-                <a href="#" class="subscription__button">Купить абонемент</a>
+                <a href="#" class="subscription__button" tabindex="19">Купить абонемент</a>
                 <div class="subscription__shadow">7700</div>
               </li>
             </ul>
@@ -187,7 +185,7 @@
                 </div>
               </div>
               <p>Ежегодные соревнования по CrossFit</p>
-              <a href="#" class="promo__button">Заполнить заявку</a>
+              <a href="#" class="promo__button" tabindex="20">Заполнить заявку</a>
             </div>
             <picture class="promo__img">
               <!--290 580 -->
@@ -205,16 +203,16 @@
         <section class="coaches">
           <h2>Тренеры</h2>
           <div class="coaches__toggle">
-            <div class="coaches__toggle-prev" data-direction="left" data-element="button">
+            <div class="coaches__toggle-prev" data-direction="left" data-element="button" tabindex="21">
               <span class="visually-hidden">назад</span>
             </div>
-            <div class="coaches__toggle-next" data-direction="right" data-element="button">
+            <div class="coaches__toggle-next" data-direction="right" data-element="button" tabindex="21">
               <span class="visually-hidden">вперед</span>
             </div>
           </div>
           <div class="coaches__slider" data-element="viewport">
             <ul class="coaches__list" data-element="slider">
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="23">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                   <!--290 580 -->
@@ -238,7 +236,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="24">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                     <!--290 580 -->
@@ -262,7 +260,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="25">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                     <!--290 580 -->
@@ -286,7 +284,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="26">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                     <!--290 580 -->
@@ -310,7 +308,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="27">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                   <!--290 580 -->
@@ -334,7 +332,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="28">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                     <!--290 580 -->
@@ -358,7 +356,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="29">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                     <!--290 580 -->
@@ -382,7 +380,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="coaches__item" data-element="slider__item">
+              <li class="coaches__item" data-element="slider__item" tabindex="30">
                 <div class="coaches__content">
                   <picture class="coaches__img">
                     <!--290 580 -->
@@ -407,6 +405,7 @@
                 </div>
               </li>
             </ul>
+          </div>
           <div>
           </div>
         </section>
@@ -452,7 +451,7 @@
                 </div>
                 <div class="advantages__item-block">
                   <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целе  быстрее с&nbsp;рофессиональным тренером</p>
+                  <p>Добивайтесь своих целе  быстрее с&nbsp;профессиональным тренером</p>
                 </div>
               </li>
             </ul>
@@ -475,7 +474,7 @@
                 <h3>Год</h3>
                 <span>4999</span>
                 <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-                <a href="#" class="stock__link">Подробнее</a>
+                <a href="#" class="stock__link" tabindex="31">Подробнее</a>
               </div>
               <picture class="stock__img">
                 <!--290 580 -->
@@ -491,13 +490,13 @@
             <div class="stock__container">
               <div class="stock__block stock__block--mounth">
                 <h3>Месяц бесплатно</h3>
-                <p>Приведи друга, получи абонемент в подарок</p>
-                <a href="#" class="stock__block-link">Подробнее</a>
+                <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                <a href="#" class="stock__block-link" tabindex="32">Подробнее</a>
               </div>
               <div class="stock__block stock__block--discount">
                 <h3>Скидка 20%</h3>
                 <p>Корпоративный фитнес с командой</p>
-                <a href="#" class="stock__block-link">Подробнее</a>
+                <a href="#" class="stock__block-link" tabindex="33">Подробнее</a>
               </div>
             </div>
           </div>
@@ -518,12 +517,11 @@
                     <!--80  160-->
                     <img src="img/Anna.png" srcset="img/Anna@2x.png 2x" alt="Анна" width="80" height="80">
                     </picture>
-                    <p>Анна Орлова</p>
                   </div>
 
                   <div class="reviews__description">
                     <h3>Анна Орлова</h3>
-                    <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&#187;</p>
+                    <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&#187;</p>
                   </div>
                 </li>
                 <li class="reviews__item" data-element="carousel-item">
@@ -536,11 +534,10 @@
                       <!--80  160-->
                       <img src="img/Anna.png" srcset="img/Anna@2x.png 2x" alt="Анна" width="80" height="80">
                     </picture>
-                    <p>Марина Петрова</p>
                   </div>
                   <div class="reviews__description">
                     <h3>Марина Петрова</h3>
-                    <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&#187;</p>
+                    <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&#187;</p>
                   </div>
                 </li>
                 <li class="reviews__item" data-element="carousel-item">
@@ -553,22 +550,21 @@
                       <!--80  160-->
                       <img src="img/Anna.png" srcset="img/Anna@2x.png 2x" alt="Анна" width="80" height="80">
                     </picture>
-                    <p>Елена Иванова</p>
                   </div>
-
                   <div class="reviews__description">
                     <h3>Елена Иванова</h3>
-                    <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&#187;</p>
+                    <p>&#171;Хожу в SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&#187;</p>
                   </div>
                 </li>
               </ul>
             </div>
-
-            <div class="reviews__toggle reviews__toggle--prev" data-element="prev-rev">
-              <span class="visually-hidden">назад</span>
-            </div>
-            <div class="reviews__toggle reviews__toggle--next" data-element="next-rev">
-              <span class="visually-hidden">вперед</span>
+            <div class="reviews__toggle-container">
+              <div class="reviews__toggle reviews__toggle--prev" data-element="prev-rev" tabindex="34">
+                <span class="visually-hidden">назад</span>
+              </div>
+              <div class="reviews__toggle reviews__toggle--next" data-element="next-rev" tabindex="55">
+                <span class="visually-hidden">вперед</span>
+              </div>
             </div>
           </div>
         </section>
@@ -582,14 +578,14 @@
                 <div class="form-feedback__wrapper">
                   <div class="form-feedback__content form-feedback__content--name">
                     <label class="form-feedback__content-label form-feedback__content-label--name" for="name">Имя</label>
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name" required tabindex="36">
                   </div>
                   <div class="form-feedback__content form-feedback__content--phone">
                     <label class="form-feedback__content-label form-feedback__content-label--phone" for="phone">Телефон:</label>
-                    <input type="tel" name="phone" id="phone" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[\]{0,1}\d{2}[\]{0,1}\d{2}" minlength="11" maxlength="14">
+                    <input type="tel" name="phone" id="phone" required pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="14" tabindex="37">
                   </div>
                 </div>
-                <button class="form-feedback__button" type="submit">Отправить</button>
+                <button class="form-feedback__button" type="submit" tabindex="38">Отправить</button>
               </form>
             </div>
 
@@ -609,11 +605,11 @@
                 <div class="contacts__container contacts__container--right">
                   <div class="contacts__item contacts__item--phone">
                     <h3>Телефон:</h3>
-                    <a class="contacts__phone" href="tel:88005555555">8-800-555-55-55</a>
+                    <a class="contacts__phone" href="tel:88005555555" tabindex="39">8-800-555-55-55</a>
                   </div>
                   <div class="contacts__item contacts__item--mail">
                     <h3>Email:</h3>
-                    <a class="contacts__mail" href="omsk@supergym.ru">omsk@supergym.ru</a>
+                    <a class="contacts__mail" href="omsk@supergym.ru" tabindex="40">omsk@supergym.ru</a>
                   </div>
                 </div>
               </div>
@@ -624,7 +620,7 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" tabindex="41">
             <span class="visually-hidden">Логотип supergym</span>
               <svg width="87" height="20">
                 <use xlink:href="img/sprite.svg#logo"></use>
@@ -632,42 +628,44 @@
           </a>
           <nav class="page-footer__navigation">
             <ul class="page-footer__navigation-list">
-              <li class="page-footer__navigation-item">
-                <a href="#" class="page-footer__navigation-link">Услуги</a>
+              <li class="page-footer__navigation-item page-footer__navigation-item--mob">
               </li>
-              <li class="page-footer__navigation-item">
-                <a href="#" class="page-footer__navigation-link">Абонементы</a>
+              <li class="page-footer__navigation-item page-footer__navigation-item--3">
+                <a href="#" class="page-footer__navigation-link" tabindex="42">Услуги</a>
               </li>
-              <li class="page-footer__navigation-item">
-                <a href="#" class="page-footer__navigation-link">Акции</a>
+              <li class="page-footer__navigation-item page-footer__navigation-item--5">
+                <a href="#" class="page-footer__navigation-link" tabindex="43">Абонементы</a>
               </li>
-              <li class="page-footer__navigation-item">
-                <a href="#" class="page-footer__navigation-link">Тренеры</a>
+              <li class="page-footer__navigation-item page-footer__navigation-item--2">
+                <a href="#" class="page-footer__navigation-link" tabindex="44">Акции</a>
               </li>
-              <li class="page-footer__navigation-item">
-                <a href="#" class="page-footer__navigation-link">Рассписание</a>
+              <li class="page-footer__navigation-item page-footer__navigation-item--4">
+                <a href="#" class="page-footer__navigation-link" tabindex="45">Тренеры</a>
+              </li>
+              <li class="page-footer__navigation-item page-footer__navigation-item--6">
+                <a href="#" class="page-footer__navigation-link" tabindex="46">Рассписание</a>
               </li>
             </ul>
           </nav>
             <ul class="page-footer__social-list">
-              <li class="page-footer__social-item">
-                <a href="#" class="page-footer__link">
+              <li class="page-footer__social-item page-footer__social-item-vk">
+                <a href="#" class="page-footer__link" tabindex="47">
                   <span class="visually-hidden">Вконтакте</span>
                   <svg class="page-footer__logo" width="24" height="13">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
-              <li class="page-footer__social-item">
+              <li class="page-footer__social-item page-footer__social-item-inst">
                 <span class="visually-hidden">instagramm</span>
-                <a class="page-footer__social-link" href="#">
+                <a class="page-footer__social-link" href="#" tabindex="48">
                 <svg class="page-footer__logo-social" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-instagramm"></use>
                 </svg>
                 </a>
               </li>
-              <li class="page-footer__social-item">
-                <a href="#" class="page-footer__link">
+              <li class="page-footer__social-item page-footer__social-item-fb">
+                <a href="#" class="page-footer__link" tabindex="49">
                   <span class="visually-hidden">facebook</span>
                   <svg class="page-footer__logo" width="12" height="24">
                     <use xlink:href="img/sprite.svg#facebook"></use>

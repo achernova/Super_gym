@@ -86,6 +86,3 @@ const getCarousel = () => {
 };
 
 export {getCarousel};
-
-/* prevToggle.classList.toggle('disabled', slideIndex === 0);
-    nextToggle.classList.toggle('disabled', slideIndex === --slides.length);*/

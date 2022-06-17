@@ -4,12 +4,12 @@
   width: 100%;
   background-color: $color-default-white;
   color: $Sapphire;
-  padding-top: 70px;
+  padding-top: 67px;
   padding-bottom: 65px;
 
   @media (max-width: 1199px) {
     padding-left: 134px;
-    padding-bottom: 45px;
+    padding-bottom: 46px;
     text-align: left;
   }
 
@@ -28,7 +28,7 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
   margin-left: 118px;
 
   @media (max-width: 1199px) {
@@ -36,7 +36,7 @@
     text-align: left;
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   @media (max-width: 767px) {
@@ -96,10 +96,15 @@
     top: 0;
     left: 229px;
 
-  }
-  @media (max-width: 767px) {
-    border-right: none;
-    border-bottom: 1px solid $light-slate-grey;
+    @media (max-width: 1199px) {
+      top: 10px;
+      left: 264px;
+      height: 128px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -155,6 +160,10 @@
 
 .contacts__item--phone {
   margin-bottom: 17px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 23px;
+  }
 
   @media (max-width: 767px) {
     margin-bottom: 11px;

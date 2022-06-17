@@ -6,8 +6,14 @@
   padding-top: 112px;
   margin-bottom: 114px;
 
+  @media (max-width: 1199px) {
+    padding-top: 98px;
+    margin-bottom: 94px;
+  }
+
   @media (max-width: 767px) {
-  margin-bottom: 42px;
+    margin-bottom: 42px;
+    padding-top: 47px;
   }
 }
 
@@ -19,7 +25,7 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 52px;
+  margin-bottom: 57px;
   color: $Sapphire;
 
   @media (max-width: 1199px) {
@@ -135,7 +141,8 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 21px;
+    margin-bottom: 27px;
+    margin-top: 22px;
   }
 }
 
@@ -222,7 +229,7 @@
   font-size: 26px;
   line-height: 26px;
   color: $Sapphire;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 
   @media (max-width: 1199px) {
     margin-bottom: 13px;
@@ -271,7 +278,17 @@
 
 .stock__block--mounth {
   @media (max-width: 767px) {
-    padding-bottom: 30px;
+    padding-bottom: 33px;
+  }
+}
+
+.stock__block--mounth p {
+  @media (max-width: 1199px) {
+    width: 200px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 17px;
   }
 }
 
@@ -293,6 +310,10 @@
 
 .stock__block--discount p {
   margin-bottom: 66px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 62px;
+  }
 
   @media (max-width: 767px) {
     margin-bottom: 15px;

@@ -4,14 +4,15 @@
   width: 100%;
   background-color: $Sapphire;
   color: $color-default-white;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 67px;
+  padding-bottom: 67px;
   text-align: left;
   padding-left: 102px;
 
   @media (max-width: 1199px) {
     padding-left: 134px;
-    padding-bottom: 67px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 
   @media (max-width: 767px) {
@@ -120,7 +121,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: $color-default-white;;
+  outline: $color-default-white;
   padding-left: 10px;
   color: $color-default-white;
   background-color: $Sapphire;

@@ -14,7 +14,6 @@
   }
 }
 
-
 .coaches h2 {
   margin: 0;
   padding: 0;
@@ -40,7 +39,7 @@
     width: 150px;
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 26px;
+    margin-bottom: 47px;
     padding-left: 0;
   }
 }
@@ -58,7 +57,8 @@
   }
 
   @media (max-width: 767px) {
-    width: 290px;
+    width: 226px;
+    height: 274px;
   }
 }
 
@@ -80,6 +80,17 @@
   left: -586px;
   cursor: pointer;
   opacity: 1;
+
+  @media (max-width: 1199px) {
+    left: -274px;
+  }
+
+  @media (max-width: 767px) {
+    left: -98px;
+    top: 120px;
+    width: 12px;
+    height: 28px;
+  }
 }
 
 .coaches__toggle-prev:hover::after {
@@ -99,6 +110,17 @@
   top: 131px;
   cursor: pointer;
   opacity: 1;
+
+  @media (max-width: 1199px) {
+    left: 351px;
+  }
+
+  @media (max-width: 767px) {
+    left: 351px;
+    top: 120px;
+    width: 16px;
+    height: 32px;
+  }
 }
 
 .coaches__toggle-next:hover::before {
@@ -123,7 +145,7 @@
   }
 
   @media (max-width: 767px) {
-    transform: translateX(-570px);
+    transform: translateX(-602px);
   }
 }
 
@@ -141,7 +163,7 @@
   background-color: $background-coach;
   padding-top: 55px;
   padding-bottom: 73px;
-  padding-left: 5px;  
+  padding-left: 5px;
 }
 
 .is-active .coaches__info {
@@ -154,7 +176,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-
 }
 
 .coaches__info p {
@@ -221,6 +242,7 @@
     .coaches__content p {
       display: none;
     }
+
     .coaches__info {
       display: flex;
     }

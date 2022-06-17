@@ -1,7 +1,6 @@
 const buttons = document.querySelectorAll('[data-element="button"]');
 const sliderCoach = document.querySelector('[data-element="slider"]');
 const sliderItems = document.querySelector('[data-element="slider__item"]');
-// const cards = document.querySelectorAll('[data-element="card"]');
 
 function swipedetect(el, callback) {
   let touchsurface = el;
@@ -89,12 +88,10 @@ const getInfo = () => {
       for (let q = 0; q < sliderItems.length; q++) {
         sliderItems[q].classList.remove('is-active');
       }
-      const sliderItem = evt.target.closest('[data-element="card"]');
+      const sliderItem = evt.target.closest('[data-element="slider__item"]');
       sliderItem.classList.add('is-active');
-    });
+    }, {passive: true});
   }
-
-  console.warn(getInfo);
 };
 
 
