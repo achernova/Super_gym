@@ -4,10 +4,11 @@
   padding: 0;
   background-color: $ghost-white;
   padding-top: 119px;
-  padding-bottom: 115px;
+  padding-bottom: 121px;
 
   @media (max-width: 1199px) {
     padding-top: 51px;
+    padding-bottom: 112px;
   }
 
   @media (max-width: 767px) {
@@ -28,6 +29,7 @@
   margin-bottom: 39px;
 
   @media (max-width: 1199px) {
+    width: 100%;
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 33px;
@@ -36,7 +38,7 @@
   @media (max-width: 767px) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
   }
 }
 
@@ -47,24 +49,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 39px;
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 341px;
-    background-color: $tab-color;
-    top: 39px;
-    left: 0;
-
-    @media (max-width: 767px) {
-      width: 290px;
-      top: 35px;
-    }
-  }
+  border-bottom: 1px solid $tab-color;
 
   @media (max-width: 1199px) {
     margin-bottom: 44px;
@@ -84,7 +73,7 @@
   opacity: 50%;
   cursor: pointer;
   width: 113px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 
   @media (max-width: 1199px) {
     font-size: 18px;
@@ -164,7 +153,7 @@
   display: block;
   position: absolute;
   content: "";
-  background-image: url("../img/dumbell.png");
+  background-image: url("../img/dumbell.webp");
   background-repeat: no-repeat;
   width: 287px;
   height: 494px;
@@ -172,10 +161,11 @@
   top: 1920px;
 
   @media (max-width: 1199px) {
-    top: 2829px;
-    background-image: url("../img/dumbell-tablet.png");
-    width: 249px;
-    height: 345px;
+    background-image: url("../img/dumbell-tablet.webp");
+    top: 2869px;
+    width: 346px;
+    height: 372px;
+    right: 0;
   }
 
   @media (max-width: 767px) {
@@ -218,8 +208,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 65px;
+  padding-top: 47px;
+  padding-bottom: 57px;
   border: 7px solid $color-default-white;
   position: relative;
 
@@ -334,23 +324,20 @@
 
 .subscription__shadow {
   position: absolute;
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
   color: $tory-blue;
-  left: 64px;
+  left: 0;
+  bottom: 0;
+  right: 0;
   top: 131px;
-
-  @media (max-width: 1199px) {
-    left: 113px;
-  }
 
   @media (max-width: 767px) {
     font-size: 80px;
     line-height: 120px;
-    left: 53px;
     top: 94px;
   }
 }

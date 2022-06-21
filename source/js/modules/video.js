@@ -6,7 +6,7 @@ const playVideo = () => {
     let poster = e.target;
     let wrapper = poster.closest('.js-videoWrapper');
     videoPlay(wrapper);
-  });
+  }, {passive: true});
 
   function videoPlay(wrapper) {
     let iframe = wrapper.querySelector('.js-videoIframe');

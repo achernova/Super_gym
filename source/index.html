@@ -8,8 +8,8 @@
     <title>SUPERGYM</title>
     <link rel="preload" href="fonts/bebas-neue-bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-bold-condensed.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
@@ -66,25 +66,32 @@
               <h2>Тренажерный зал</h2>
               <span>Просторный зал площадью 900 кв/м</span>
               <p>Supergym – самый большой фитнес центр за Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+              <div class="description__paragraph">
+                <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              </div>
             </div>
-            <div class="description__paragraph">
-              <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            <div class="description__interacttive">
+              <picture class="description__img">
+                <!--320 640 -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/jym-mobile.webp 1x, img/jym-mobile@2x.webp 2x">
+                <!--678 1356 -->
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/jym-tablet.webp 1x, img/jym-tablet@2x.webp 2x">
+                <!--660  1320-->
+                <source type="image/webp" srcset="img/jym.webp 1x, img/jym@2x.webp 2x">
+                <!--660  1320-->
+                <img src="img/jym.jpg" srcset="img/jym@2x.jpg 2x" alt="фото зала" width="660" height="401">
+              </picture>
+              <div class="description__video description__video-full js-videoWrapper" data-element="video">
+                <iframe class="description__iframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" data-element="iframe"></iframe>
+                <button class="description__button js-videoPoster" data-element="video-button" tabindex="7">
+                  <span class="visually-hidden">Проиграть видео</span>
+                </button>
+              </div>
             </div>
+
+
           </div>
-          <picture class="description__img">
-            <!--320 640 -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/jym-mobile.webp 1x, img/jym-mobile@2x.webp 2x">
-            <!--678 1356 -->
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/jym-tablet.webp 1x, img/jym-tablet@2x.webp 2x">
-            <!--660  1320-->
-            <source type="image/webp" srcset="img/jym.webp 1x, img/jym@2x.webp 2x">
-            <!--660  1320-->
-            <img src="img/jym.jpg" srcset="img/jym@2x.jpg 2x" alt="фото зала" width="660" height="401">
-          </picture>
-          <div class="description__video description__video-full js-videoWrapper" data-element="video">
-            <iframe class="description__iframe js-videoIframe" width="364" height="228" data-src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" data-element="iframe"></iframe>
-            <button class="description__button js-videoPoster" data-element="video-button" tabindex="7"></button>
-          </div>
+
         </section>
         <section class="subscription">
           <h2>Абонементы</h2>
@@ -98,7 +105,7 @@
               <li class="subscription__item">
                 <h3>С тренером</h3>
                 <span>12 занятий</span>
-                <p>5000<span>&#x20bd;</span></p>
+                <p>5000 <span>&#x20bd;</span></p>
                 <a href="#" class="subscription__button" tabindex="11">Купить абонемент</a>
                 <div class="subscription__shadow">5000</div>
               </li>
@@ -434,6 +441,13 @@
                   <p>Вы всегда найдете место для своей машины на&nbsp;нашей парковке</p>
                 </div>
               </li>
+              <li class="advantages__center">
+                <div class="advantages__center-count">
+                  <p>100</p>
+                  <span>Тренажеров</span>
+                </div>
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
+              </li>
               <li class="advantages__item advantages__item--350">
                 <div class="advantages__item-count">
                   <p>350</p>
@@ -455,13 +469,6 @@
                 </div>
               </li>
             </ul>
-            <div class="advantages__center">
-              <div class="advantages__center-count">
-                <p>100</p>
-                <span>Тренажеров</span>
-              </div>
-              <p>Современные тренажеры на&nbsp;все группы мышц</p>
-            </div>
           </div>
 
         </section>
@@ -559,12 +566,12 @@
               </ul>
             </div>
             <div class="reviews__toggle-container">
-              <div class="reviews__toggle reviews__toggle--prev" data-element="prev-rev" tabindex="34">
+              <button class="reviews__toggle reviews__toggle--prev" data-element="prev-rev" type="button" tabindex="34">
                 <span class="visually-hidden">назад</span>
-              </div>
-              <div class="reviews__toggle reviews__toggle--next" data-element="next-rev" tabindex="55">
+              </button>
+              <button class="reviews__toggle reviews__toggle--next" data-element="next-rev" type="button" tabindex="55">
                 <span class="visually-hidden">вперед</span>
-              </div>
+              </button>
             </div>
           </div>
         </section>
@@ -657,7 +664,7 @@
                 </a>
               </li>
               <li class="page-footer__social-item page-footer__social-item-inst">
-                <span class="visually-hidden">instagramm</span>
+                <span class="visually-hidden">Инстаграмм</span>
                 <a class="page-footer__social-link" href="#" tabindex="48">
                 <svg class="page-footer__logo-social" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-instagramm"></use>
@@ -666,7 +673,7 @@
               </li>
               <li class="page-footer__social-item page-footer__social-item-fb">
                 <a href="#" class="page-footer__link" tabindex="49">
-                  <span class="visually-hidden">facebook</span>
+                  <span class="visually-hidden">Фэйсбук</span>
                   <svg class="page-footer__logo" width="12" height="24">
                     <use xlink:href="img/sprite.svg#facebook"></use>
                   </svg>
@@ -674,7 +681,6 @@
               </li>
             </ul>
         </div>
-
       </footer>
     </div>
 

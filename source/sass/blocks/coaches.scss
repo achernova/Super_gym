@@ -15,18 +15,21 @@
 }
 
 .coaches h2 {
-  margin: 0;
+  width: 1160px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Bebas Neue", "Arial", cursive;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-left: 105px;
+  padding-left: 2px;
   color: $Sapphire;
   margin-bottom: 52px;
+  text-align: left;
 
   @media (max-width: 1199px) {
+    width: 100%;
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 42px;
@@ -39,7 +42,7 @@
     width: 150px;
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
     padding-left: 0;
   }
 }
@@ -82,7 +85,7 @@
   opacity: 1;
 
   @media (max-width: 1199px) {
-    left: -274px;
+    left: -289px;
   }
 
   @media (max-width: 767px) {
@@ -112,14 +115,16 @@
   opacity: 1;
 
   @media (max-width: 1199px) {
-    left: 351px;
+    left: 372px;
   }
 
   @media (max-width: 767px) {
-    left: 351px;
-    top: 120px;
-    width: 16px;
-    height: 32px;
+    background-image: url("../img/svg/arrow-left.svg");
+    transform: rotate(180deg);
+    left: 183px;
+    top: 127px;
+    width: 12px;
+    height: 28px;
   }
 }
 
@@ -134,8 +139,6 @@
   padding: 0;
   position: absolute;
   width: 9999px;
-  transition: 500ms;
-  height: 294px;
   display: flex;
   justify-content: start;
   flex-wrap: nowrap;
@@ -162,8 +165,21 @@
   color: $color-default-white;
   background-color: $background-coach;
   padding-top: 55px;
-  padding-bottom: 73px;
+  padding-bottom: 40px;
   padding-left: 5px;
+  height: 294px;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  @media (max-width: 767px) {
+    padding-top: 45px;
+    padding-left: 40px;
+    align-items: flex-start;
+  }
+}
+
+.coaches__info::-webkit-scrollbar {
+  scrollbar-width: none;
 }
 
 .is-active .coaches__info {
@@ -186,7 +202,11 @@
   line-height: 24px;
   color: $spindle;
   margin-bottom: 30px;
-  padding-left: 55px;
+  padding-left: 3px;
+
+  @media (max-width: 767px) {
+    padding-left: 47px;
+  }
 }
 
 .coaches__info-list {
@@ -195,6 +215,10 @@
   padding-left: 23px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 767px) {
+    padding-left: 10px;
+  }
 }
 
 .coaches__info-list li {
@@ -224,10 +248,11 @@
   display: block;
   margin-right: 40px;
   position: relative;
+  transition: all 0.5s ease-out;
 
   @media (max-width: 1199px) {
     width: 268px;
-    margin-right: 33px;
+    margin-right: 32px;
   }
 }
 

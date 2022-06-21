@@ -2,15 +2,11 @@
   margin: 0 auto;
   padding: 0;
   width: 1160px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 230px;
 
   @media (max-width: 1199px) {
     width: 678px;
-    flex-direction: column;
+
     margin-top: 80px;
   }
 
@@ -24,13 +20,17 @@
 .description__wrapper {
   margin: 0;
   padding: 0;
-  width: 430px;
+  width: 1160px;
   padding-left: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   @media (max-width: 1199px) {
     width: 678px;
     padding-left: 0;
     margin-bottom: 43px;
+    flex-direction: column;
   }
 
   @media (max-width: 767px) {
@@ -42,6 +42,7 @@
 .description__container {
   margin: 0 auto;
   padding: 0;
+  width: 435px;
 
   @media (max-width: 1199px) {
     text-align: center;
@@ -64,6 +65,7 @@
   text-transform: uppercase;
   color: $Sapphire;
   margin-bottom: 13px;
+  margin-top: 44px;
 
   @media (max-width: 1199px) {
     margin: 0 auto;
@@ -104,11 +106,14 @@
   line-height: 24px;
   color: $Sapphire;
   margin-top: 37px;
+  width: 377px;
 
   @media (max-width: 1199px) {
     margin: auto;
     text-align: center;
     margin-top: 32px;
+    width: 500px;
+    margin-bottom: 44px;
   }
 
   @media (max-width: 767px) {
@@ -116,6 +121,7 @@
     text-align: left;
     margin-top: 23px;
     padding-right: 15px;
+    margin-bottom: 37px;
   }
 }
 
@@ -139,28 +145,45 @@
   color: $Sapphire;
 }
 
+.description__interacttive {
+  margin: 0;
+  padding: 0;
+  width: 660px;
+  position: relative;
+
+  @media (max-width: 1199px) {
+    width: 678px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
 .description__video {
   display: block;
   position: absolute;
-  margin: 0;
+  margin: auto;
   padding: 0;
-  left: 437px;
-  top: 287px;
+  bottom: 0;
+  right: 0;
+  left: -419px;
+  top: 398px;
   width: 364px;
   height: 228px;
+
 
   @media (max-width: 1199px) {
     width: 266px;
     height: 167px;
-    left: 208px;
-    top: 491px;
+    top: 345px;
+    left: 0;
   }
 
   @media (max-width: 767px) {
-    left: 0;
-    top: 622px;
+    top: 352px;
     margin: 0 auto;
-    width: 100%;
+    width: 320px;
   }
 }
 
@@ -242,10 +265,14 @@
 
   @media (max-width: 1199px) {
     top: 28%;
-    left: 39%;
+    left: 36%;
     background-image: url("../img/svg/play-tablet.svg");
     width: 73px;
     height: 73px;
+  }
+
+  @media (max-width: 767px) {
+    left: 39%;
   }
 }
 

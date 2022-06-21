@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll('[data-element="button"]');
 const sliderCoach = document.querySelector('[data-element="slider"]');
-const sliderItems = document.querySelector('[data-element="slider__item"]');
+const sliderItems = document.querySelectorAll('[data-element="slider__item"]');
 
 function swipedetect(el, callback) {
   let touchsurface = el;
@@ -44,18 +44,33 @@ function swipedetect(el, callback) {
 }
 
 const getSlider = function getSlider() {
-
   let draw = function draw(direction) {
     let sliderEls = document.querySelectorAll('[data-element="slider__item"]');
+    console.warn(direction);
     if (direction === 'left') {
       let slide = sliderEls[sliderEls.length - 1];
-      sliderEls[sliderEls.length - 1].remove();
+      // let style = slide.currentStyle || window.getComputedStyle(slide);
+      // let marginLeft = parseInt(sliderEls[0].clientWidth, 2) + parseInt(style.marginRight, 2);
+      let marginLeft = 300;
+      slide.style.marginLeft = '-' + marginLeft + 'px';
       sliderCoach.insertBefore(slide, sliderCoach.firstChild);
+      console.warn(marginLeft);
+      setTimeout(function () {
+        slide.style.marginLeft = '0px';
+      }, 10);
     } else {
       let slide = sliderEls[0];
-      sliderEls[0].remove();
-      sliderCoach.appendChild(slide);
+      // let style = slide.currentStyle || window.getComputedStyle(slide);
+      // let marginLeft = parseInt(slide.clientWidth, 2) + parseInt(style.marginRight, 2);
+      let marginLeft = 300;
+      sliderEls[0].style.marginLeft = '-' + marginLeft + 'px';
+      setTimeout(function () {
+        sliderEls[0].remove();
+        slide.style.marginLeft = '';
+        sliderCoach.appendChild(slide);
+      }, 500);
     }
+
   };
 
   let move = function move(e) {
@@ -73,6 +88,7 @@ const getSlider = function getSlider() {
     buttons[i].addEventListener('click', move);
   }
 };
+
 
 const getInfo = () => {
   for (let i = 0; i < sliderItems.length; i++) {
@@ -93,6 +109,5 @@ const getInfo = () => {
     }, {passive: true});
   }
 };
-
 
 export {getInfo, getSlider};

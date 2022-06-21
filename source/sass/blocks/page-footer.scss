@@ -14,7 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 29px;
+  padding-bottom: 10px;
   padding-left: 100px;
   padding-right: 86px;
 
@@ -23,7 +23,7 @@
     padding-top: 44px;
     padding-left: 44px;
     padding-right: 27px;
-    padding-bottom: 45px;
+    padding-bottom: 17px;
   }
 
   @media (max-width: 767px) {
@@ -54,26 +54,30 @@
   margin-bottom: 30px;
 
   @media (max-width: 767px) {
-    margin-bottom: 16px;
+    margin-bottom: 19px;
   }
 }
 
 .page-footer__navigation-list {
   margin: 0;
   padding: 0;
-  width: 432px;
+  width: 470px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   @media (max-width: 1199px) {
     width: 390px;
+    justify-content: space-between;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
+    width: 290px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 33px;
+    padding-left: 2px;
   }
 }
 
@@ -149,6 +153,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (max-width: 767px) {
     width: 160px;
@@ -182,7 +187,7 @@
 .page-footer__social-item-vk svg {
   @media (max-width: 767px) {
     width: 32px;
-    height: 17px;
+    height: 28px;
   }
 }
 
