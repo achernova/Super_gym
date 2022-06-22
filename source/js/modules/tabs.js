@@ -6,7 +6,6 @@ const getTabs = () => {
     tabList[i].addEventListener('click', function (evt) {
       evt.preventDefault();
       const tabId = evt.target.getAttribute('data-id');
-      console.warn(tabId);
       for (let q = 0; q < subscriptionList.length; q++) {
         subscriptionList[q].classList.remove('is-open');
       }

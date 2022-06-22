@@ -313,13 +313,14 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $resolution-blue;
-  display: block;
   width: 206px;
   padding-top: 24px;
   padding-bottom: 24px;
   border: 2px solid $resolution-blue;
+  z-index: 200;
   text-align: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .subscription__shadow {

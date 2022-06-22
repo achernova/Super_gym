@@ -93,13 +93,26 @@ const getCarousel = () => {
       };
     }
   };
+
+  nextToggle.addEventListener('click', function () {
+    prevToggle.removeAttribute('disabled');
+    if (position > -width * (countItems - 1)) {
+      nextToggle.setAttribute('disabled', '');
+    }
+  }, {passive: true});
+
+  prevToggle.addEventListener('click', function () {
+    nextToggle.removeAttribute('disabled');
+    if (position === -width) {
+      prevToggle.setAttribute('disabled', '');
+    }
+    if (position === -widthMobile) {
+      prevToggle.setAttribute('disabled', '');
+    }
+  }, {passive: true});
+
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
-
 };
 
 export {getCarousel};
-
-
-/* prevToggle.classList.toggle('disabled', slideIndex === 0);
-    prevToggleclassList.toggle('disabled', slideIndex === --slides.length);*/

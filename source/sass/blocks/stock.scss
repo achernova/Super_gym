@@ -4,11 +4,11 @@
   width: 100%;
   text-align: center;
   padding-top: 112px;
-  margin-bottom: 114px;
+  margin-bottom: 69px;
 
   @media (max-width: 1199px) {
     padding-top: 25px;
-    margin-bottom: 94px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 767px) {
@@ -33,7 +33,7 @@
     text-align: center;
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
   }
 
   @media (max-width: 767px) {
@@ -93,6 +93,7 @@
 .stock__description {
   display: block;
   width: 280px;
+  height: 462px;
   margin: 0;
   padding: 0;
   background-color: $torch-red;
@@ -110,6 +111,7 @@
     text-align: center;
     padding-left: 0;
     padding-bottom: 39px;
+    height: 300px;
   }
 }
 
@@ -183,12 +185,14 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   @media (max-width: 1199px) {
     flex-direction: row;
     padding-left: 45px;
     padding-right: 45px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   @media (max-width: 767px) {
@@ -209,6 +213,7 @@
   padding-top: 23px;
   padding-left: 28px;
   padding-bottom: 25px;
+  margin-bottom: 46px;
 
   @media (max-width: 1199px) {
     width: 324px;

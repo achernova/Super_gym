@@ -19,6 +19,10 @@
     padding-bottom: 68px;
   }
 
+  @media (max-width: 768px) {
+    padding-bottom: 43px;
+  }
+
   @media (max-width: 767px) {
     padding-left: 15px;
     text-align: left;
@@ -51,6 +55,11 @@
     text-align: left;
   }
 
+  @media (max-width: 768px) {
+    padding-left: 0;
+    margin-bottom: 39px;
+  }
+
   @media (max-width: 767px) {
     margin: 0 auto;
     width: 300px;
@@ -79,6 +88,11 @@
 
   @media (max-width: 770px) {
     margin: 0;
+    padding-left: 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
   }
 
   @media (max-width: 767px) {

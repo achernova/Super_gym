@@ -46,22 +46,8 @@ function swipedetect(el, callback) {
 const getSlider = function getSlider() {
   let draw = function draw(direction) {
     let sliderEls = document.querySelectorAll('[data-element="slider__item"]');
-    console.warn(direction);
     if (direction === 'left') {
-      let slide = sliderEls[sliderEls.length - 1];
-      // let style = slide.currentStyle || window.getComputedStyle(slide);
-      // let marginLeft = parseInt(sliderEls[0].clientWidth, 2) + parseInt(style.marginRight, 2);
-      let marginLeft = 300;
-      slide.style.marginLeft = '-' + marginLeft + 'px';
-      sliderCoach.insertBefore(slide, sliderCoach.firstChild);
-      console.warn(marginLeft);
-      setTimeout(function () {
-        slide.style.marginLeft = '0px';
-      }, 10);
-    } else {
       let slide = sliderEls[0];
-      // let style = slide.currentStyle || window.getComputedStyle(slide);
-      // let marginLeft = parseInt(slide.clientWidth, 2) + parseInt(style.marginRight, 2);
       let marginLeft = 300;
       sliderEls[0].style.marginLeft = '-' + marginLeft + 'px';
       setTimeout(function () {
@@ -69,6 +55,14 @@ const getSlider = function getSlider() {
         slide.style.marginLeft = '';
         sliderCoach.appendChild(slide);
       }, 500);
+    } else {
+      let slide = sliderEls[sliderEls.length - 1];
+      let marginLeft = 300;
+      slide.style.marginLeft = '-' + marginLeft + 'px';
+      sliderCoach.insertBefore(slide, sliderCoach.firstChild);
+      setTimeout(function () {
+        slide.style.marginLeft = '0px';
+      }, 10);
     }
 
   };
