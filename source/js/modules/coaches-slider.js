@@ -34,7 +34,7 @@ function swipedetect(el, callback) {
     elapsedTime = new Date().getTime() - startTime;
     if (elapsedTime <= allowedTime) {
       if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
-        swipedir = (distX < 0) ? 'left' : 'right';
+        swipedir = (distX < 0) ? 'right' : 'left';
       } else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint) {
         swipedir = (distY < 0) ? 'up' : 'down';
       }
@@ -47,6 +47,14 @@ const getSlider = function getSlider() {
   let draw = function draw(direction) {
     let sliderEls = document.querySelectorAll('[data-element="slider__item"]');
     if (direction === 'left') {
+      let slide = sliderEls[sliderEls.length - 1];
+      let marginLeft = 300;
+      slide.style.marginLeft = '-' + marginLeft + 'px';
+      sliderCoach.insertBefore(slide, sliderCoach.firstChild);
+      setTimeout(function () {
+        slide.style.marginLeft = '0px';
+      }, 10);
+    } else {
       let slide = sliderEls[0];
       let marginLeft = 300;
       sliderEls[0].style.marginLeft = '-' + marginLeft + 'px';
@@ -55,16 +63,7 @@ const getSlider = function getSlider() {
         slide.style.marginLeft = '';
         sliderCoach.appendChild(slide);
       }, 500);
-    } else {
-      let slide = sliderEls[sliderEls.length - 1];
-      let marginLeft = 300;
-      slide.style.marginLeft = '-' + marginLeft + 'px';
-      sliderCoach.insertBefore(slide, sliderCoach.firstChild);
-      setTimeout(function () {
-        slide.style.marginLeft = '0px';
-      }, 10);
     }
-
   };
 
   let move = function move(e) {
@@ -83,15 +82,17 @@ const getSlider = function getSlider() {
   }
 };
 
-
 const getInfo = () => {
   for (let i = 0; i < sliderItems.length; i++) {
     sliderItems[i].addEventListener('click', function (evt) {
       for (let r = 0; r < sliderItems.length; r++) {
         sliderItems[r].classList.remove('is-active');
+        sliderItems[r].classList.remove('is-disabled');
       }
+
       const sliderItem = evt.target.closest('[data-element="slider__item"]');
       sliderItem.classList.add('is-active');
+      sliderItem.classList.add('is-disabled');
     }, {passive: true});
 
     sliderItems[i].addEventListener('focus', function (evt) {

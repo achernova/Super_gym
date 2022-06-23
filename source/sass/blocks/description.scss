@@ -6,7 +6,6 @@
 
   @media (max-width: 1199px) {
     width: 678px;
-
     margin-top: 80px;
   }
 
@@ -58,7 +57,7 @@
 }
 
 .description__container h2 {
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -150,9 +149,11 @@
   padding: 0;
   width: 660px;
   position: relative;
+  height: 401px;
 
   @media (max-width: 1199px) {
     width: 678px;
+    height: auto;
   }
 
   @media (max-width: 767px) {

@@ -96,9 +96,13 @@ const getCarousel = () => {
 
   nextToggle.addEventListener('click', function () {
     prevToggle.removeAttribute('disabled');
-    if (position > -width * (countItems - 1)) {
+    if (position === (-width * countItems + width + width)) {
       nextToggle.setAttribute('disabled', '');
     }
+    if (position === (-widthMobile * countItems + widthMobile + widthMobile)) {
+      nextToggle.setAttribute('disabled', '');
+    }
+
   }, {passive: true});
 
   prevToggle.addEventListener('click', function () {

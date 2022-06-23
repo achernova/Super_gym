@@ -11,7 +11,7 @@
 .feedback__wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
+  max-width: 1900px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 0;

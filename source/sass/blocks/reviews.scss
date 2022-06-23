@@ -17,7 +17,7 @@
 .reviews h2 {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -46,13 +46,18 @@
   padding: 0;
   width: 560px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (max-width: 1199px) {
+    align-items: stretch;
     width: 768px;
   }
 
   @media (max-width: 767px) {
     width: 100%;
+      align-items: center;
   }
 }
 
@@ -179,7 +184,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
+  top: 50%;
 
   @media (max-width: 767px) {
     width: 320px;
@@ -193,32 +199,38 @@
 }
 
 .reviews__toggle--prev {
-  position: absolute;
-  top: -140px;
-  left: -59px;
+  position: relative;
+  top: 50%;
+  left: -56px;
   width: 20px;
   height: 30px;
 
+  @media (max-width: 1199px) {
+    left: 44px;
+    top: -15px;
+  }
+
   @media (max-width: 767px) {
-    top: -333px;
     left: 0;
+    top: -15px;
   }
 }
 
 .reviews__toggle--next {
-  position: absolute;
-  top: -140px;
-  left: 597px;
+  position: relative;
+  top: 50%;
+  left: 62px;
   width: 20px;
   height: 30px;
 
-  @media (max-width: 768px) {
-    left: 603px;
+  @media (max-width: 1199px) {
+    left: 168px;
+    top: -15px;
   }
 
   @media (max-width: 767px) {
-    top: -333px;
-    left: 285px;
+    left: -14px;
+    top: -15px;
   }
 }
 
@@ -240,7 +252,7 @@
 
   @media (max-width: 767px) {
     left: 14px;
-    top: 150px;
+    top: 0;
     width: 12px;
   }
 }
@@ -271,7 +283,7 @@
     background-image: url("../img/svg/arrow-left.svg");
     transform: rotate(180deg);
     left: 10px;
-    top: 150px;
+    top: 0;
     width: 12px;
   }
 }

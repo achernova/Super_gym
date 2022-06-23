@@ -18,7 +18,7 @@
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -84,6 +84,10 @@
   cursor: pointer;
   opacity: 1;
 
+  @media (max-width: 1200px) {
+    left: -552px;
+  }
+
   @media (max-width: 1199px) {
     left: -289px;
   }
@@ -114,9 +118,14 @@
   cursor: pointer;
   opacity: 1;
 
+  @media (max-width: 1200px) {
+    left: 628px;
+  }
+
   @media (max-width: 1199px) {
     left: 372px;
   }
+
 
   @media (max-width: 767px) {
     background-image: url("../img/svg/arrow-left.svg");
@@ -148,7 +157,7 @@
   }
 
   @media (max-width: 767px) {
-    transform: translateX(-602px);
+    transform: translateX(-616px);
   }
 }
 
@@ -173,7 +182,7 @@
 
   @media (max-width: 767px) {
     padding-top: 45px;
-    padding-left: 40px;
+    padding-left: 56px;
     align-items: flex-start;
   }
 }
@@ -254,6 +263,11 @@
     width: 268px;
     margin-right: 32px;
   }
+
+  @media (max-width: 767px) {
+    margin-right: 56px;
+    width: 244px;
+  }
 }
 
 .coaches__img img {
@@ -278,11 +292,10 @@
   position: relative;
 }
 
-.coaches__content p {
+.coaches__content span {
   position: absolute;
   bottom: 24px;
   left: 78px;
-
   margin: 0;
   padding: 0;
   display: block;
@@ -295,4 +308,8 @@
     bottom: 32px;
     left: 81px;
   }
+}
+
+.is-disabled span {
+  display: none;
 }

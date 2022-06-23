@@ -401,19 +401,19 @@ template {
 }
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Bebas Neue"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
+  src: local("BN"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: local("Bebas Neue"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
+  src: local("BN"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
 }
 
 *,
@@ -809,7 +809,7 @@ ul {
 }
 
 .page-header__phone {
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 26px;
@@ -851,7 +851,7 @@ ul {
 .page-header__intro-container p {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 400;
   font-size: 49px;
   line-height: 59px;
@@ -914,7 +914,7 @@ ul {
   display: block;
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 109px;
   line-height: 109px;
@@ -1012,7 +1012,7 @@ ul {
 }
 
 .description__container h2 {
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1060,6 +1060,7 @@ ul {
   padding: 0;
   width: 660px;
   position: relative;
+  height: 401px;
 }
 
 .description__video {
@@ -1137,7 +1138,7 @@ ul {
 
 .subscription h2 {
   margin: 0 auto;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1292,9 +1293,14 @@ ul {
   color: #102654;
 }
 
+.subscription__item #ruoble {
+  font-family: "Rouble", "Arial", sans-serif;
+}
+
 .subscription__button {
   margin: 0 auto;
   padding: 0;
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
@@ -1354,6 +1360,9 @@ ul {
   padding-right: 76px;
   padding-top: 78px;
   padding-bottom: 78px;
+  /*height: 500px;
+  overflow-y: auto;
+  scrollbar-width: none;*/
 }
 
 .promo__container p {
@@ -1385,7 +1394,7 @@ ul {
 .promo__description h2 {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 90px;
   line-height: 90px;
@@ -1465,7 +1474,7 @@ ul {
 .promo__date span {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
@@ -1525,6 +1534,11 @@ ul {
   user-select: none;
 }
 
+.promo__img img {
+  width: 100%;
+  height: 100%;
+}
+
 .coaches {
   margin: 0;
   padding: 0;
@@ -1537,7 +1551,7 @@ ul {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1708,7 +1722,7 @@ ul {
   position: relative;
 }
 
-.coaches__content p {
+.coaches__content span {
   position: absolute;
   bottom: 24px;
   left: 78px;
@@ -1719,6 +1733,10 @@ ul {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.is-disabled span {
+  display: none;
 }
 
 .advantages {
@@ -1732,7 +1750,7 @@ ul {
 
 .advantages h2 {
   margin: 0 auto;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1756,9 +1774,9 @@ ul {
   -ms-grid-columns: 350px 243px 350px;
   grid-template-columns: 350px 243px 350px;
   row-gap: 153px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-column-gap: 57px;
   -moz-column-gap: 57px;
   column-gap: 57px;
@@ -1936,6 +1954,9 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 243px;
   background-color: #1c3374;
   color: #ffffff;
@@ -1989,13 +2010,13 @@ ul {
   width: 100%;
   text-align: center;
   padding-top: 112px;
-  margin-bottom: 69px;
+  margin-bottom: 113px;
 }
 
 .stock h2 {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -2033,7 +2054,6 @@ ul {
 .stock__description {
   display: block;
   width: 280px;
-  height: 462px;
   margin: 0;
   padding: 0;
   background-color: #ed0233;
@@ -2085,6 +2105,11 @@ ul {
   user-select: none;
 }
 
+.stock__img img {
+  width: 100%;
+  height: 100%;
+}
+
 .stock__container {
   margin: 0;
   padding: 0;
@@ -2095,9 +2120,10 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 46px;
 }
 
 .stock__block {
@@ -2113,7 +2139,6 @@ ul {
   padding-top: 23px;
   padding-left: 28px;
   padding-bottom: 25px;
-  margin-bottom: 46px;
 }
 
 .stock__block h3 {
@@ -2175,7 +2200,7 @@ ul {
 .reviews h2 {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -2189,6 +2214,16 @@ ul {
   padding: 0;
   width: 560px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .reviews__carousel {
@@ -2289,7 +2324,8 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
+  top: 50%;
 }
 
 .reviews__toggle {
@@ -2299,17 +2335,17 @@ ul {
 }
 
 .reviews__toggle--prev {
-  position: absolute;
-  top: -140px;
-  left: -59px;
+  position: relative;
+  top: 50%;
+  left: -56px;
   width: 20px;
   height: 30px;
 }
 
 .reviews__toggle--next {
-  position: absolute;
-  top: -140px;
-  left: 597px;
+  position: relative;
+  top: 50%;
+  left: 62px;
   width: 20px;
   height: 30px;
 }
@@ -2356,7 +2392,7 @@ ul {
 .feedback__wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
+  max-width: 1900px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -2382,7 +2418,7 @@ ul {
 .form-feedback h3 {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -2485,7 +2521,7 @@ ul {
 .contacts h2 {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", cursive;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -2532,7 +2568,7 @@ ul {
   position: absolute;
   content: "";
   width: 1px;
-  height: 110px;
+  height: 100%;
   background-color: #74819c;
   top: 0;
   left: 229px;
@@ -2585,7 +2621,7 @@ ul {
 .page-footer__wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
+  max-width: 1900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2603,7 +2639,7 @@ ul {
 }
 
 .page-footer__logo {
-  margin-right: 34px;
+  margin-right: 67px;
 }
 
 .page-footer__navigation {
@@ -2621,8 +2657,9 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2630,6 +2667,7 @@ ul {
 .page-footer__navigation-item {
   margin: 0;
   padding: 0;
+  margin-right: 39px;
 }
 
 .page-footer__navigation-item--mob {
@@ -2671,6 +2709,11 @@ ul {
   width: 40px;
   padding-left: 5px;
   opacity: 1;
+}
+
+.page-footer__link {
+  width: 40px;
+  text-align: center;
 }
 
 .page-footer__social-item-fb {
@@ -2790,6 +2833,16 @@ ul {
   }
 }
 
+@media (max-width: 1200px) {
+  .coaches__toggle-prev::after {
+    left: -552px;
+  }
+
+  .coaches__toggle-next::before {
+    left: 628px;
+  }
+}
+
 @media (max-width: 1199px) {
   .page-header {
     padding-bottom: 85px;
@@ -2898,6 +2951,7 @@ ul {
 
   .description__interacttive {
     width: 678px;
+    height: auto;
   }
 
   .description__video {
@@ -3015,6 +3069,7 @@ ul {
 
   .promo__container {
     padding: 45px 45px;
+    height: auto;
   }
 
   .promo__container p {
@@ -3132,7 +3187,7 @@ ul {
     width: 100%;
   }
 
-  .coaches__content p {
+  .coaches__content span {
     bottom: 32px;
     left: 81px;
   }
@@ -3258,7 +3313,7 @@ ul {
 
   .stock {
     padding-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 97px;
   }
 
   .stock h2 {
@@ -3315,6 +3370,7 @@ ul {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    gap: 0;
   }
 
   .stock__block {
@@ -3350,7 +3406,20 @@ ul {
   }
 
   .reviews__wrapper {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     width: 768px;
+  }
+
+  .reviews__toggle--prev {
+    left: 44px;
+    top: -15px;
+  }
+
+  .reviews__toggle--next {
+    left: 168px;
+    top: -15px;
   }
 
   .reviews__toggle--prev::after {
@@ -3474,11 +3543,19 @@ ul {
     padding-bottom: 17px;
   }
 
+  .page-footer__logo {
+    margin-right: 28px;
+  }
+
   .page-footer__navigation-list {
     width: 390px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .page-footer__navigation-item {
+    margin: 0;
   }
 }
 
@@ -3523,16 +3600,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .subscription__wrapper {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  .reviews__toggle--next {
-    left: 603px;
-  }
-
   .form-feedback h3 {
     padding-left: 0;
     margin-bottom: 39px;
@@ -3737,6 +3804,12 @@ ul {
     width: 80px;
   }
 
+  .subscription__wrapper {
+    max-width: 500px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .subscription h2::after {
     display: none;
   }
@@ -3801,8 +3874,22 @@ ul {
     padding-bottom: 50px;
   }
 
+  .promo__container p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .promo__description {
+    margin: 0 auto;
+  }
+
+  .promo__button {
+    width: 100%;
+  }
+
   .promo__img img {
     margin: 0 auto;
+    width: 100%;
   }
 
   .coaches {
@@ -3842,14 +3929,14 @@ ul {
   }
 
   .coaches__list {
-    -webkit-transform: translateX(-602px);
-    -ms-transform: translateX(-602px);
-    transform: translateX(-602px);
+    -webkit-transform: translateX(-616px);
+    -ms-transform: translateX(-616px);
+    transform: translateX(-616px);
   }
 
   .coaches__info {
     padding-top: 45px;
-    padding-left: 40px;
+    padding-left: 56px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -3861,6 +3948,11 @@ ul {
 
   .coaches__info-list {
     padding-left: 10px;
+  }
+
+  .coaches__item {
+    margin-right: 56px;
+    width: 244px;
   }
 
   .advantages {
@@ -4014,7 +4106,7 @@ ul {
   }
 
   .stock__wrapper {
-    width: 100%;
+    max-width: 397px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -4110,6 +4202,9 @@ ul {
 
   .reviews__wrapper {
     width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .reviews__carousel {
@@ -4173,18 +4268,18 @@ ul {
   }
 
   .reviews__toggle--prev {
-    top: -333px;
     left: 0;
+    top: -15px;
   }
 
   .reviews__toggle--next {
-    top: -333px;
-    left: 285px;
+    left: -14px;
+    top: -15px;
   }
 
   .reviews__toggle--prev::after {
     left: 14px;
-    top: 150px;
+    top: 0;
     width: 12px;
   }
 
@@ -4194,7 +4289,7 @@ ul {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     left: 10px;
-    top: 150px;
+    top: 0;
     width: 12px;
   }
 
@@ -4338,6 +4433,7 @@ ul {
   }
 
   .page-footer__navigation-item {
+    margin: 0;
     margin-bottom: 16px;
   }
 
@@ -4403,7 +4499,37 @@ ul {
   }
 }
 
+@media (max-width: 350px) {
+  .promo__container p {
+    text-align: left;
+  }
+
+  .promo__description {
+    margin: 0;
+  }
+
+  .promo__button {
+    width: 202px;
+  }
+}
+
 @media (max-width: 320px) {
+  .subscription__wrapper {
+    width: 100%;
+  }
+
+  .subscription__list {
+    width: 100%;
+  }
+
+  .promo__wrapper {
+    width: 100%;
+  }
+
+  .stock__wrapper {
+    width: 100%;
+  }
+
   .form-feedback__container {
     width: 290px;
     padding: 0;

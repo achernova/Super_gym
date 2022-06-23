@@ -22,23 +22,23 @@
 
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
-    local("Bebas Neue"),
+    local("BN"),
     url("../fonts/bebas-neue-regular.woff2") format("woff2"),
     url("../fonts/bebas-neue-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-style: bold;
   font-weight: 700;
   font-display: swap;
   src:
-    local("Bebas Neue"),
+    local("BN"),
     url("../fonts/bebas-neue-bold.woff2") format("woff2"),
     url("../fonts/bebas-neue-bold.woff") format("woff");
 }
