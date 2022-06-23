@@ -8,8 +8,12 @@
   padding-bottom: 67px;
   text-align: left;
   padding-left: 102px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 
   @media (max-width: 1199px) {
+    display: block;
     padding-left: 0;
     padding-top: 65px;
     padding-bottom: 68px;
@@ -26,6 +30,15 @@
     padding-left: 15px;
     padding-bottom: 68px;
     padding-right: 15px;
+  }
+}
+
+.form__container {
+  margin: 0;
+  width: 583px;
+
+  @media (max-width: 1199px) {
+    width: 100%;
   }
 }
 

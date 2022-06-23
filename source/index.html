@@ -576,43 +576,49 @@
           <h2 class="visually-hidden">Обратная связь</h2>
           <div class="feedback__wrapper">
             <div class="form-feedback">
-              <h3>Бесплатное занятие</h3>
-              <form action="https://echo.htmlacademy.ru" method="POST" class="form-feedback__container">
-                <div class="form-feedback__wrapper">
-                  <div class="form-feedback__content form-feedback__content--name">
-                    <label class="form-feedback__content-label form-feedback__content-label--name" for="name">Имя</label>
-                    <input type="text" name="name" id="name" required tabindex="36">
+              <div class="form__container">
+                <h3>Бесплатное занятие</h3>
+                <form action="https://echo.htmlacademy.ru" method="POST" class="form-feedback__container">
+                  <div class="form-feedback__wrapper">
+                    <div class="form-feedback__content form-feedback__content--name">
+                      <label class="form-feedback__content-label form-feedback__content-label--name" for="name">Имя</label>
+                      <input type="text" name="name" id="name" required tabindex="36">
+                    </div>
+                    <div class="form-feedback__content form-feedback__content--phone">
+                      <label class="form-feedback__content-label form-feedback__content-label--phone" for="phone">Телефон:</label>
+                      <input type="tel" name="phone" id="phone" required pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="14" tabindex="37">
+                    </div>
                   </div>
-                  <div class="form-feedback__content form-feedback__content--phone">
-                    <label class="form-feedback__content-label form-feedback__content-label--phone" for="phone">Телефон:</label>
-                    <input type="tel" name="phone" id="phone" required pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="14" tabindex="37">
-                  </div>
-                </div>
-                <button class="form-feedback__button" type="submit" tabindex="38">Отправить</button>
-              </form>
+                  <button class="form-feedback__button" type="submit" tabindex="38">Отправить</button>
+                </form>
+              </div>
             </div>
 
             <div class="contacts">
-              <h2>Контакты</h2>
+
               <div class="contacts__wrapper">
-                <div class="contacts__container contacts__container--left">
-                  <div class="contacts__item contacts__item--addres">
-                    <h3>Адрес:</h3>
-                    <p>г. Омск, ул. 60 лет Октября, 7</p>
+                <h2>Контакты</h2>
+                <div class="contacts__content">
+
+                  <div class="contacts__container contacts__container--left">
+                    <div class="contacts__item contacts__item--addres">
+                      <h3>Адрес:</h3>
+                      <p>г. Омск, ул. 60 лет Октября, 7</p>
+                    </div>
+                    <div class="contacts__item">
+                      <h3>График работы:</h3>
+                      <p>Пн-Вс: с 8:00 до 22:00</p>
+                    </div>
                   </div>
-                  <div class="contacts__item">
-                    <h3>График работы:</h3>
-                    <p>Пн-Вс: с 8:00 до 22:00</p>
-                  </div>
-                </div>
-                <div class="contacts__container contacts__container--right">
-                  <div class="contacts__item contacts__item--phone">
-                    <h3>Телефон:</h3>
-                    <a class="contacts__phone" href="tel:88005555555" tabindex="39">8-800-555-55-55</a>
-                  </div>
-                  <div class="contacts__item contacts__item--mail">
-                    <h3>Email:</h3>
-                    <a class="contacts__mail" href="omsk@supergym.ru" tabindex="40">omsk@supergym.ru</a>
+                  <div class="contacts__container contacts__container--right">
+                    <div class="contacts__item contacts__item--phone">
+                      <h3>Телефон:</h3>
+                      <a class="contacts__phone" href="tel:88005555555" tabindex="39">8-800-555-55-55</a>
+                    </div>
+                    <div class="contacts__item contacts__item--mail">
+                      <h3>Email:</h3>
+                      <a class="contacts__mail" href="omsk@supergym.ru" tabindex="40">omsk@supergym.ru</a>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -2358,7 +2358,7 @@ ul {
   width: 16px;
   height: 32px;
   left: 0;
-  top: -4px;
+  top: -13px;
   opacity: 1;
 }
 
@@ -2392,11 +2392,14 @@ ul {
 .feedback__wrapper {
   margin: 0 auto;
   padding: 0;
-  max-width: 1900px;
+  max-width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 0;
   -moz-column-gap: 0;
   column-gap: 0;
@@ -2413,6 +2416,21 @@ ul {
   padding-bottom: 67px;
   text-align: left;
   padding-left: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.form__container {
+  margin: 0;
+  width: 583px;
 }
 
 .form-feedback h3 {
@@ -2533,6 +2551,10 @@ ul {
 .contacts__wrapper {
   margin: 0 auto;
   padding: 0;
+}
+
+.contacts__content {
+  margin: 0;
   width: 434px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2544,6 +2566,7 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-left: 124px;
 }
 
 .contacts__container {
@@ -2785,7 +2808,7 @@ ul {
     opacity: 0.5;
   }
 
-  .coaches__item:hover .coaches__content p {
+  .coaches__item:hover .coaches__content span {
     display: none;
   }
 
@@ -2833,13 +2856,17 @@ ul {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1355px) {
+  .coaches__slider {
+    width: 864px;
+  }
+
   .coaches__toggle-prev::after {
-    left: -552px;
+    left: -436px;
   }
 
   .coaches__toggle-next::before {
-    left: 628px;
+    left: 510px;
   }
 }
 
@@ -3443,9 +3470,14 @@ ul {
   }
 
   .form-feedback {
+    display: block;
     padding-left: 0;
     padding-top: 65px;
     padding-bottom: 68px;
+  }
+
+  .form__container {
+    width: 100%;
   }
 
   .form-feedback h3 {
@@ -3484,6 +3516,11 @@ ul {
   }
 
   .contacts__wrapper {
+    margin: 0 auto;
+  }
+
+  .contacts__content {
+    margin-left: 0;
     margin: 0 auto;
     width: 471px;
     display: -ms-grid;
@@ -3593,7 +3630,7 @@ ul {
     text-align: left;
   }
 
-  .contacts__wrapper {
+  .contacts__content {
     margin: 0;
     padding-left: 30px;
   }
@@ -3614,7 +3651,7 @@ ul {
     margin-bottom: 39px;
   }
 
-  .contacts__wrapper {
+  .contacts__content {
     padding: 0;
   }
 }
@@ -4367,7 +4404,7 @@ ul {
     margin-bottom: 37px;
   }
 
-  .contacts__wrapper {
+  .contacts__content {
     margin: 0;
     width: 290px;
     display: -webkit-box;

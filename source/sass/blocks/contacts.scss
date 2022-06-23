@@ -73,12 +73,23 @@
 .contacts__wrapper {
   margin: 0 auto;
   padding: 0;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+  }
+
+}
+
+.contacts__content {
+  margin: 0;
   width: 434px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 124px;
 
   @media (max-width: 1199px) {
+    margin-left: 0;
     margin: 0 auto;
     width: 471px;
     display: grid;
