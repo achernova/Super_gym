@@ -1,10 +1,10 @@
 .subscription {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
-  background-color: $ghost-white;
   padding-top: 119px;
   padding-bottom: 121px;
+
+  background-color: $ghost-white;
 
   @media (max-width: 1199px) {
     padding-top: 51px;
@@ -18,41 +18,43 @@
 
 
 .subscription h2 {
-  margin: 0 auto;
-  font-family: "BN", "Arial", sans-serif;
+  margin: 0 auto 39px 0;
+
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-family: "BN", "Arial", sans-serif;
   text-align: center;
   color: $Sapphire;
-  margin-bottom: 39px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 
   @media (max-width: 1199px) {
     width: 100%;
+    margin-bottom: 33px;
+
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 33px;
   }
 
   @media (max-width: 767px) {
+    margin-bottom: 21px;
+
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 21px;
   }
 }
 
 .subscription__tab-list {
-  margin: 0 auto;
-  padding: 0;
-  width: 341px;
+  position: relative;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 39px;
-  position: relative;
+  max-width: 341px;
+  margin: 0 auto 39px 0;
+
   border-bottom: 1px solid $tab-color;
 
   @media (max-width: 1199px) {
@@ -65,15 +67,17 @@
 }
 
 .subscription__tab-item {
+  width: 113px;
   margin: 0;
   padding: 0;
+  padding-bottom: 12px;
+
   font-size: 20px;
   line-height: 30px;
   color: $Sapphire;
-  opacity: 50%;
+
   cursor: pointer;
-  width: 113px;
-  padding-bottom: 12px;
+  opacity: 50%;
 
   @media (max-width: 1199px) {
     font-size: 18px;
@@ -81,9 +85,10 @@
   }
 
   @media (max-width: 767px) {
+    width: 60px;
+
     font-size: 16px;
     line-height: 24px;
-    width: 60px;
   }
 
   &:hover {
@@ -126,15 +131,16 @@
 }
 
 .is-active {
-  opacity: 100%;
   border-bottom: 2px solid $torch-red;
+  opacity: 100%;
 }
 
 .subscription__wrapper {
+  position: relative;
+
+  width: 1160px;
   margin: 0 auto;
   padding: 0;
-  width: 1160px;
-  position: relative;
 
   @media (max-width: 1199px) {
     width: 100%;
@@ -154,22 +160,26 @@
 }
 
 .subscription h2::after {
-  display: block;
-  position: absolute;
   content: "";
-  background-image: url("../img/dumbell.webp");
-  background-repeat: no-repeat;
+  position: absolute;
+  top: 1920px;
+  right: 0;
+
+  display: block;
   width: 287px;
   height: 494px;
-  right: 0;
-  top: 1920px;
+
+  background-image: url("../img/dumbell.webp");
+  background-repeat: no-repeat;
 
   @media (max-width: 1199px) {
-    background-image: url("../img/dumbell-tablet.webp");
     top: 2869px;
+    right: 0;
+
     width: 346px;
     height: 372px;
-    right: 0;
+
+    background-image: url("../img/dumbell-tablet.webp");
   }
 
   @media (max-width: 767px) {
@@ -178,17 +188,19 @@
 }
 
 .subscription__list {
+  display: none;
+  width: 1160px;
   margin: 0 auto;
   padding: 0;
-  width: 1160px;
-  display: none;
-  grid-template-columns: 1fr 1fr 1fr;
+
   column-gap: 40px;
 
+  grid-template-columns: 1fr 1fr 1fr;
+
   @media (max-width: 1199px) {
-    width: 442px;
     flex-direction: column;
     align-items: center;
+    width: 442px;
   }
 
   @media (max-width: 767px) {
@@ -209,31 +221,34 @@
 }
 
 .subscription__item {
-  margin: 0;
-  padding: 0;
-  width: 360px;
-  background-color: $color-default-white;
-  text-align: center;
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  width: 360px;
+  margin: 0;
+  padding: 0;
   padding-top: 47px;
   padding-bottom: 57px;
+
+  text-align: center;
+
+  background-color: $color-default-white;
   border: 7px solid $color-default-white;
-  position: relative;
 
 
   @media (max-width: 1199px) {
     width: 100%;
-    padding-top: 55px;
     margin-bottom: 40px;
+    padding-top: 55px;
     padding-bottom: 60px;
   }
 
   @media (max-width: 767px) {
-    padding-top: 37px;
-    padding-bottom: 46px;
     width: 100%;
     margin-bottom: 42px;
+    padding-top: 37px;
+    padding-bottom: 46px;
   }
 }
 
@@ -243,25 +258,28 @@
     border-image-slice: 1;
 
     .subscription__button {
+      color: $color-default-white;
+
       background: $button-background;
       border: none;
-      color: $color-default-white;
     }
   }
 }
 
 .subscription__item h3 {
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
+
   font-size: 26px;
   line-height: 40px;
   color: $Sapphire;
-  margin-bottom: 5px;
 
   @media (max-width: 1199px) {
+    margin-bottom: 10px;
+
     font-size: 26px;
     line-height: 29px;
-    margin-bottom: 10px;
   }
 
   @media (max-width: 767px) {
@@ -272,11 +290,12 @@
 
 .subscription__item span {
   margin: 0;
+  margin-bottom: 65px;
   padding: 0;
+
   font-size: 16px;
   line-height: 24px;
   color: $chambray;
-  margin-bottom: 65px;
 
   @media (max-width: 767px) {
     margin-bottom: 53px;
@@ -284,25 +303,29 @@
 }
 
 .subscription__item p {
+  z-index: 100;
+
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
+
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
   color: $egyptian-blue;
-  margin-bottom: 34px;
-  z-index: 100;
 
   @media (max-width: 767px) {
+    margin-bottom: 30px;
+
     font-size: 48px;
     line-height: 72px;
-    margin-bottom: 30px;
   }
 }
 
 .subscription__item p span {
   margin: 0;
   padding: 0;
+
   font-size: 60px;
   line-height: 90px;
   color: $Sapphire;
@@ -318,40 +341,47 @@
 }
 
 .subscription__button {
+  z-index: 200;
+
+  width: 206px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $resolution-blue;
-  width: 206px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border: 2px solid $resolution-blue;
-  z-index: 200;
   text-align: center;
-  user-select: none;
+  color: $resolution-blue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border: 2px solid $resolution-blue;
   cursor: pointer;
+
+  user-select: none;
 }
 
 .subscription__shadow {
   position: absolute;
+  top: 131px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   margin: auto;
   padding: 0;
+
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
   color: $tory-blue;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 131px;
 
   @media (max-width: 767px) {
+    top: 94px;
+
     font-size: 80px;
     line-height: 120px;
-    top: 94px;
   }
 }

@@ -1,37 +1,31 @@
 .page-footer {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  background-color: $black-russian;
+
   color: $color-default-white;
+
+  background-color: $black-russian;
 }
 
 .page-footer__wrapper {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1900px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 42px;
-  padding-bottom: 10px;
-  padding-left: 100px;
-  padding-right: 86px;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 42px 86px 10px 100px;
 
   @media (max-width: 1199px) {
-    width: 100%;
-    padding-top: 44px;
-    padding-left: 44px;
-    padding-right: 27px;
-    padding-bottom: 17px;
-  }
+    max-width: 100%;
+    padding: 44px 27px 17px 44px;
+   }
 
   @media (max-width: 767px) {
-    width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 47px;
     flex-direction: column;
+    max-width: 320px;
+    padding-top: 47px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 47px 15px 17px 15px;
   }
 }
 
@@ -63,39 +57,37 @@
 }
 
 .page-footer__navigation-list {
-  margin: 0;
-  padding: 0;
-  width: 470px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 470px;
+  margin: 0;
+  padding: 0;
 
   @media (max-width: 1199px) {
-    width: 390px;
     justify-content: space-between;
+    max-width: 390px;
   }
 
   @media (max-width: 767px) {
-    width: 290px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 33px;
+    max-width: 290px;
     padding-left: 2px;
+
+    grid-column-gap: 33px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .page-footer__navigation-item {
-  margin: 0;
-  padding: 0;
   margin-right: 39px;
 
-  @media (max-width: 1199px)  {
+  @media (max-width: 1199px) {
     margin: 0;
   }
 
   @media (max-width: 767px) {
-    margin: 0;
     margin-bottom: 16px;
   }
 }
@@ -139,13 +131,14 @@
   }
 }
 
-
 .page-footer__navigation-link {
   margin: 0;
   padding: 0;
+
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
+
   opacity: 1;
 
   &:hover {
@@ -156,26 +149,28 @@
 }
 
 .page-footer__social-list {
-  margin: 0;
-  padding: 0;
-  width: 130px;
-  color: $color-default-white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 130px;
+  margin: 0;
+  padding: 0;
+
+  color: $color-default-white;
 
   @media (max-width: 767px) {
-    width: 160px;
+    max-width: 160px;
   }
 }
 
 .page-footer__social-item {
   display: block;
+  width: 40px;
   margin: 0 auto;
   padding: 0;
-  width: 40px;
   padding-left: 5px;
+
   opacity: 1;
 
   &:hover {
@@ -192,6 +187,7 @@
 
 .page-footer__link {
   width: 40px;
+
   text-align: center;
 }
 

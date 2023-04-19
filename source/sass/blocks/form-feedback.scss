@@ -1,41 +1,32 @@
 .form-feedback {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: $Sapphire;
-  color: $color-default-white;
-  padding-top: 67px;
-  padding-bottom: 67px;
-  text-align: left;
-  padding-left: 102px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  width: 100%;
+  padding: 67px 102px 67px 0;
+
+  text-align: left;
+  color: $color-default-white;
+
+  background-color: $Sapphire;
 
   @media (max-width: 1199px) {
     display: block;
-    padding-left: 0;
-    padding-top: 65px;
-    padding-bottom: 68px;
+    padding: 65px 0 68px 0;
   }
 
   @media (max-width: 770px) {
     padding-left: 134px;
-    padding-top: 65px;
-    padding-bottom: 68px;
   }
 
   @media (max-width: 767px) {
-    padding-top: 65px;
-    padding-left: 15px;
-    padding-bottom: 68px;
-    padding-right: 15px;
+    padding: 65px 15px 68px 15px;
   }
 }
 
-.form__container {
+.form-feedback__container {
+  max-width: 583px;
   margin: 0;
-  width: 583px;
 
   @media (max-width: 1199px) {
     width: 100%;
@@ -43,113 +34,96 @@
 }
 
 .form-feedback h3 {
-  margin: 0;
-  padding: 0;
-  font-family: "BN", "Arial", sans-serif;
+  margin: 0 0 46px 0;
+
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  font-family: "BN", "Arial", sans-serif;
   text-transform: uppercase;
-  margin-bottom: 46px;
+  letter-spacing: 0.03em;
 
   @media (max-width: 1199px) {
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto 41px auto;
+
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 41px;
+    text-align: center;
   }
 
   @media (max-width: 770px) {
     margin: 0;
-    text-align: left;
     padding-left: 20px;
+
+    text-align: left;
   }
 
   @media (max-width: 768px) {
-    padding-left: 0;
     margin-bottom: 39px;
+    padding-left: 0;
   }
 
   @media (max-width: 767px) {
-    margin: 0;
-    width: 290px;
+    max-width: 290px;
+    margin-bottom: 44px;
+
     font-size: 32px;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 44px;
   }
 }
 
 .form-feedback__container {
-  margin: 0;
-  padding: 0;
-  width: 410px;
   display: flex;
   flex-direction: column;
+  max-width: 410px;
 
   @media (max-width: 1199px) {
+    max-width: 471px;
     margin: 0 auto;
-    width: 471px;
-  }
-
-  @media (max-width: 770px) {
-    margin: 0;
+    align-items: center;
   }
 
   @media (max-width: 767px) {
-    margin: 0;
     width: 100%;
-    padding-left: 20px;
     padding-right: 30px;
+    padding-left: 20px;
   }
 
   @media (max-width: 320px) {
-    width: 290px;
+    max-width: 290px;
     padding: 0;
   }
 }
 
 .form-feedback__wrapper {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
   justify-content: space-between;
+  margin-bottom: 30px;
 
   @media (max-width: 767px) {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 32px;
   }
 
   @media (max-width: 320px) {
-    width: 290px;
+    max-width: 290px;
   }
 }
 
 .form-feedback__content {
-  margin: 0;
-  padding: 0;
-  width: 190px;
-  text-align: left;
   display: flex;
   flex-direction: row;
-  border-bottom: 2px solid $color-default-white;
 
-  @media (max-width: 1199px) {
-    width: 205px;
-  }
+  text-align: left;
+
+  border-bottom: 2px solid $color-default-white;
 
   @media (max-width: 767px) {
     width: 100%;
-  }
-
-  @media (max-width: 320px) {
-    width: 290px;
   }
 }
 
@@ -166,22 +140,21 @@
 }
 
 .form-feedback__content label {
-  margin: 0;
-  padding: 0;
+  margin-right: 5px;
+
   font-size: 14px;
   line-height: 16px;
-  margin-right: 5px;
 }
 
 .form-feedback__content input {
-  margin: 0;
-  padding: 0;
+  width: 80%;
+  padding-left: 10px;
+
+  color: $color-default-white;
+
+  background-color: $Sapphire;
   border: none;
   outline: $color-default-white;
-  padding-left: 10px;
-  color: $color-default-white;
-  background-color: $Sapphire;
-  width: 80%;
 }
 
 .form-feedback__content input:focus {
@@ -189,30 +162,23 @@
 }
 
 .form-feedback__button {
-  margin: 0;
-  padding: 0;
-  width: 410px;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
   text-transform: uppercase;
-  padding-top: 18px;
-  padding-bottom: 18px;
+
   background-color: $Sapphire;
   border: 2px solid $color-default-white;
-
-  @media (max-width: 1199px) {
-    width: 471px;
-  }
-
-  @media (max-width: 767px) {
-    width: 100%;
-  }
 
   &:hover {
     @media screen and (min-width: 1200px) {
       color: $Sapphire;
+
       background-color: $color-default-white;
     }
   }

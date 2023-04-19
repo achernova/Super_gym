@@ -1,6 +1,4 @@
 .feedback {
-  margin: 0;
-  padding: 0;
   width: 100%;
 
   @media (max-width: 767px) {
@@ -9,14 +7,13 @@
 }
 
 .feedback__wrapper {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  column-gap: 0;
+  max-width: 100%;
+
   border-top: 1px solid $Sapphire;
+
+  grid-template-columns: 1fr 1fr;
 
   @media (max-width: 1199px) {
     display: flex;

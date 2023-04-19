@@ -1,14 +1,13 @@
 .page-header {
-  margin: 0 auto;
-  padding: 0;
   width: 100%;
-  background: $background-header;
-  padding-bottom: 46px;
   margin-bottom: 121px;
+  padding-bottom: 46px;
+
+  background: $background-header;
 
   @media (max-width: 1199px) {
-    padding-bottom: 85px;
     margin-bottom: 16px;
+    padding-bottom: 85px;
   }
 
   @media (max-width: 767px) {
@@ -17,27 +16,24 @@
 }
 
 .page-header__top {
-  margin: 0 auto;
-  padding: 0;
-  width: 1160px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
   padding-top: 28px;
 
   @media (max-width: 1199px) {
     width: 678px;
-    padding-top: 39px;
     margin-bottom: 16px;
+    padding-top: 39px;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
-    padding-top: 19px;
-    padding-left: 14px;
-    padding-right: 16px;
+    max-width: 320px;
     margin-bottom: 0;
+    padding: 19px 16px 0 14px;
   }
 }
 
@@ -49,12 +45,12 @@
 }
 
 .page-header__phone {
-  font-family: "BN", "Arial", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 26px;
-  letter-spacing: 0.03em;
+  font-family: "BN", "Arial", sans-serif;
   color: $color-default-white;
+  letter-spacing: 0.03em;
 
   &:hover {
     @media screen and (min-width: 1199px) {
@@ -75,105 +71,103 @@
 }
 
 .page-header__intro {
-  margin: 0 auto;
-  padding: 0;
-  width: 1160px;
   display: flex;
   flex-direction: row;
+  max-width: 1160px;
+  margin: 0 auto;
 
   @media (max-width: 1199px) {
-    width: 678px;
+    max-width: 678px;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
+    max-width: 320px;
   }
 }
 
 .page-header__intro-container {
-  margin: 0;
-  padding: 0;
-  width: 440px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  max-width: 440px;
   margin-right: 21px;
   padding-right: 43px;
 
   @media (max-width: 1199px) {
-    width: 335px;
+    max-width: 335px;
     padding-right: 0;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
-    padding-right: 0;
+    max-width: 320px;
     margin-right: 0;
+    padding-right: 0;
   }
 }
 
 .page-header__intro-container p {
-  margin: 0;
-  padding: 0;
-  font-family: "BN", "Arial", sans-serif;
+  margin: 107px 0 0 0;
+
   font-weight: 400;
   font-size: 49px;
   line-height: 59px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $color-default-white;
+  font-family: "BN", "Arial", sans-serif;
   text-align: right;
-  margin-top: 107px;
+  color: $color-default-white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 
   @media (max-width: 1199px) {
+    margin-top: 49px;
+    margin-right: 11px;
+
     font-size: 31px;
     line-height: 41px;
     letter-spacing: 0.08em;
-    margin-top: 49px;
-    margin-right: 11px;
   }
 
   @media (max-width: 767px) {
+    margin-top: 66px;
+
     font-size: 28px;
     line-height: 34px;
-    margin-top: 66px;
   }
 }
 
 .page-header__intro-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 440px;
+  position: relative;
+
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  max-width: 440px;
   margin-bottom: 66px;
-  position: relative;
 
   @media (max-width: 1199px) {
-    width: 335px;
+    max-width: 335px;
     margin-right: 11px;
     margin-bottom: 44px;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
+    max-width: 320px;
     margin-right: 0;
     margin-bottom: 49px;
   }
 }
 
 .page-header__intro-list {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-content: flex-end;
   position: absolute;
   top: 134px;
   left: -28px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
 
   @media (max-width: 1199px) {
     top: 95px;
@@ -187,62 +181,64 @@
 }
 
 .page-header__intro-item {
-  margin: 0;
-  padding: 0;
   font-size: 14px;
   line-height: 21px;
-  color: $color-default-white;
   text-align: right;
+  color: $color-default-white;
 }
 
 .page-header__intro-wrapper h2 {
   display: block;
   margin: 0;
-  padding: 0;
-  font-family: "BN", "Arial", sans-serif;
+
   font-weight: 700;
   font-size: 109px;
   line-height: 109px;
-  letter-spacing: 0.03em;
+  font-family: "BN", "Arial", sans-serif;
   text-align: right;
   color: $color-default-white;
+  letter-spacing: 0.03em;
 
   @media (max-width: 1199px) {
+    max-width: 335px;
+
     font-size: 86px;
     line-height: 86px;
-    width: 335px;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
+    max-width: 320px;
     margin-top: 2px;
     padding-right: 15px;
+
     font-size: 78px;
     line-height: 78px;
   }
 }
 
 .page-header__intro-link {
-  margin: 0;
-  padding: 0;
   width: 235px;
   padding-top: 18px;
   padding-bottom: 18px;
-  color: $color-default-white;
-  border: 4px solid $color-default-white;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  text-transform: uppercase;
   text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  border: 4px solid $color-default-white;
+
   user-select: none;
 
   &:hover {
     @media screen and (min-width: 1199px) {
+      color: $chambray;
+
       background-color: $resolution-blue;
       border-color: $chambray;
-      color: $chambray;
     }
   }
 
@@ -260,13 +256,12 @@
 }
 
 .page-header__social {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
   align-items: center;
-  margin-bottom: 44px;
+  align-self: flex-end;
+  margin: 0 0 44px 0;
+  padding: 0;
 
   @media (max-width: 1199px) {
     display: none;
@@ -274,10 +269,10 @@
 }
 
 .page-header__social-item a {
-  text-transform: uppercase;
-  color: $color-default-white;
   font-size: 12px;
   line-height: 14px;
+  color: $color-default-white;
+  text-transform: uppercase;
 
   &:hover {
     @media screen and (min-width: 1199px) {

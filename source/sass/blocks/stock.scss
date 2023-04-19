@@ -1,14 +1,13 @@
 .stock {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  text-align: center;
-  padding-top: 112px;
   margin-bottom: 113px;
+  padding-top: 112px;
+
+  text-align: center;
 
   @media (max-width: 1199px) {
-    padding-top: 25px;
     margin-bottom: 97px;
+    padding-top: 25px;
   }
 
   @media (max-width: 767px) {
@@ -18,51 +17,54 @@
 }
 
 .stock h2 {
-  margin: 0;
-  padding: 0;
-  font-family: "BN", "Arial", sans-serif;
+  margin: 0 0 57px 0;
+  margin-bottom: 57px;
+
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 57px;
+  font-family: "BN", "Arial", sans-serif;
   color: $Sapphire;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 
   @media (max-width: 1199px) {
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto 39px auto;
+
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 39px;
+    text-align: center;
   }
 
   @media (max-width: 767px) {
+    margin-bottom: 44px;
+
     font-size: 32px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 44px;
   }
 }
 
 .stock__wrapper {
+  display: grid;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0;
-  width: 1160px;
-  display: grid;
-  grid-template-columns: 560px 560px;
+
   column-gap: 40px;
 
+  grid-template-columns: 560px 560px;
+
   @media (max-width: 1199px) {
-    width: 768px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 768px;
   }
 
   @media (max-width: 767px) {
     max-width: 397px;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
   }
 
   @media (max-width: 320px) {
@@ -71,39 +73,40 @@
 }
 
 .stock__main {
+  display: grid;
+  width: 560px;
   margin: 0;
   padding: 0;
-  width: 560px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
   column-gap: 0;
 
+  grid-template-columns: 1fr 1fr;
+
   @media (max-width: 1199px) {
-    margin: 0 auto;
     width: 679px;
+    margin: 0 auto 27px auto;
+
     grid-template-columns: 280px 399px;
-    margin-bottom: 27px;
   }
 
   @media (max-width: 767px) {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 31px;
   }
 }
 
 .stock__description {
   display: block;
-  width: 280px;
-  margin: 0;
-  padding: 0;
-  background-color: $torch-red;
-  color: $color-default-white;
-  text-align: left;
   padding-top: 32px;
   padding-left: 45px;
+
+  text-align: left;
+  color: $color-default-white;
+
+  background-color: $torch-red;
 
   @media (max-width: 1199px) {
     padding-top: 32px;
@@ -111,63 +114,63 @@
 
   @media (max-width: 767px) {
     width: 100%;
-    text-align: center;
-    padding-left: 0;
+    min-height: 300px;
     padding-bottom: 39px;
-    height: 300px;
+    padding-left: 0;
+
+    text-align: center;
   }
 }
 
 .stock__description h3 {
   margin: 0;
-  padding: 0;
+
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
 }
 
 .stock__description span {
-  margin: 0;
-  padding: 0;
   font-weight: 700;
   font-size: 70px;
   line-height: 60px;
 }
 
 .stock__description p {
-  margin: 0;
-  padding: 0;
   margin-top: 26px;
+  margin-bottom: 182px;
+
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 182px;
 
   @media (max-width: 1199px) {
     margin-top: 27px;
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 27px;
     margin-top: 22px;
+    margin-bottom: 27px;
   }
 }
 
 .stock__link {
-  margin: 0;
-  padding: 0;
+  padding-bottom: 3px;
+
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.05em;
   color: $color-default-white;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+
   border-bottom: 1px solid $color-default-white;
-  padding-bottom: 3px;
   cursor: pointer;
+
   user-select: none;
 
   &:hover {
     @media screen and (min-width: 1200px) {
       color: $Sapphire;
+
       border-color: $Sapphire;
     }
   }
@@ -187,8 +190,6 @@
 }
 
 .stock__container {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,10 +197,11 @@
 
   @media (max-width: 1199px) {
     flex-direction: row;
-    padding-left: 45px;
-    padding-right: 45px;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-left: 45px;
+
     gap: 0;
   }
 
@@ -210,39 +212,37 @@
 }
 
 .stock__block {
-  margin: 0;
-  padding: 0;
   display: block;
-  width: 560px;
+  padding: 23px 0 25px 28px;
+
+  text-align: left;
+
   border: 7px solid $color-default-white;
   border-image: $border-gradient;
   border-image-slice: 1;
-  text-align: left;
-  padding-top: 23px;
-  padding-left: 28px;
-  padding-bottom: 25px;
 
   @media (max-width: 1199px) {
-    width: 324px;
+    min-width: 324px;
   }
 
   @media (max-width: 767px) {
+    min-width: unset;
     width: 100%;
     margin-bottom: 30px;
-    text-align: center;
-    padding-left: 0;
     padding-top: 39px;
+    padding-left: 0;
+
+    text-align: center;
   }
 }
 
 .stock__block h3 {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 9px 0;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 26px;
   color: $Sapphire;
-  margin-bottom: 9px;
 
   @media (max-width: 1199px) {
     margin-bottom: 13px;
@@ -254,40 +254,40 @@
 }
 
 .stock__block p {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 65px 0;
+
   font-size: 16px;
   line-height: 22px;
   color: $Sapphire;
-  margin-bottom: 65px;
 
   @media (max-width: 1199px) {
     margin-bottom: 42px;
   }
 
   @media (max-width: 767px) {
-    width: 159px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    max-width: 159px;
+    margin: 0 auto 20px 0;
   }
 }
 
 .stock__block-link {
-  margin: 0;
-  padding: 0;
+  padding-bottom: 3px;
+
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.05em;
   color: $Sapphire;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+
   border-bottom: 1px solid $Sapphire;
-  padding-bottom: 3px;
   cursor: pointer;
+
   user-select: none;
 
   &:hover {
     @media screen and (min-width: 1200px) {
       color: $torch-red;
+
       border-color: $torch-red;
     }
   }
