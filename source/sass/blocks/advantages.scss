@@ -61,7 +61,6 @@
 
 .advantages__list {
   display: grid;
-  align-items: stretch;
   margin: 0 auto;
   padding: 0;
 
@@ -71,7 +70,6 @@
   row-gap: 153px;
 
   @media (max-width: 1199px) {
-    align-items: center;
     margin: 0 auto 50px auto;
 
     column-gap: 0;
